@@ -21,6 +21,7 @@ The contact journey uses email. The initial scope has no contact form, applicati
 - [Site plan](docs/site-plan.md)
 - [Homepage copy](docs/homepage-copy.md)
 - [Publishing checks](docs/publishing.md)
+- [Development and Hostinger launch guide](docs/development-guide.md)
 
 ## Development
 

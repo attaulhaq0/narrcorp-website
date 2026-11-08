@@ -50,4 +50,4 @@ Contact buttons use mailto:hr@narrcorp.com. This opens the visitor's configured 
 
 Build static HTML, CSS and minimal JavaScript. Use progressive enhancement for mobile navigation, visible keyboard focus, readable contrast, semantic headings, reduced-motion support and responsive images. Optional video needs a still-image fallback and must not obscure the headline or CTA.
 
-Verify phone, tablet and desktop layouts, keyboard navigation, anchors, email links, image sizing and publishing checks before release. Domain ownership, mailbox operation and final hosting remain operational checks before launch.
+Verify phone, tablet and desktop layouts, keyboard navigation, anchors, email links, image sizing and publishing checks before release. Hostinger is the planned hosting provider. The purchased plan, domain ownership and mailbox operation remain operational checks before launch. See the development guide for the proposed stack and release process.
