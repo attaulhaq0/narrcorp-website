@@ -97,7 +97,7 @@ export const homepage = {
     ],
   },
   services: {
-    headline: 'What would you like to improve?',
+    headline: 'Practical support for your next priority.',
     description:
       'Start with a focused need or plan a broader change. Explore how we can support your next priority.',
   },
