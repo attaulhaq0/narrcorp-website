@@ -1,6 +1,6 @@
 # Narrcorp homepage copy
 
-Editorial proposal for business review. Confirm every service is offered before publishing on the finished website. No customer testimonials have been supplied.
+Editorial proposal for business review. Confirm every service is offered and every delivery commitment is adopted before launching the finished website. No customer testimonials have been supplied.
 
 ## 1. Header
 
@@ -8,101 +8,103 @@ Editorial proposal for business review. Confirm every service is offered before 
 
 **Navigation:** About / Services / Why Narrcorp
 
-**Button:** Let's talk
+**Button:** Email Narrcorp
 
 ## 2. Hero
 
 **Headline:** Turn business complexity into practical progress.
 
-**Supporting copy:** Simplify everyday operations, create useful digital experiences and plan your next technology investment. Narrcorp brings strategy, engineering and specialist expertise to the work that matters to your business.
+**Supporting copy:** Technology consulting, software engineering and specialist talent to improve how your business operates. Connect systems, modernize applications and simplify the workflows your teams rely on.
 
-**Primary button:** Start a conversation
+**Primary button:** Email Narrcorp
 
-**Secondary link:** Discover our services
+**Secondary link:** Explore services
 
 ## 3. About and value proposition
 
-**Headline:** Start with the business. Build what makes a difference.
+**Headline:** Close the gap between plans and operations.
 
-Your next challenge may be a slow process, an ageing application or information spread across too many systems. Choosing another tool is only part of the answer.
+A delayed approval, a disconnected application or an overloaded team can hold back a larger plan.
 
-Narrcorp's approach begins with understanding how the work gets done, where it breaks down and what needs to improve. From there, we help shape a practical scope, choose the right technology and bring together the expertise to deliver it.
+Narrcorp brings technology advice and delivery expertise to these gaps. We review how your systems and workflows fit together, then define the improvements and skills the project needs.
 
-The focus is on solutions your people can use, your systems can support and your business can continue to develop.
+Whether the starting point is one process or a wider modernization effort, the scope follows your priorities and operating constraints.
 
 ## 4. Services
 
-**Headline:** Practical support for your next priority.
+**Headline:** Technology and talent for better operations.
 
-**Introduction:** Start with a focused need or plan a broader change. Explore how we can support your next priority.
+**Introduction:** Choose focused support for a specific challenge, or combine services across a larger project.
 
 ### Technology strategy and roadmaps
 
-Bring clarity to the next decision. Review your current systems, identify constraints and set a realistic sequence for improvements, budgets and delivery priorities.
+Decide what to change, in what order and why. Assess existing systems, compare options and build a roadmap with priorities, dependencies and budget considerations.
 
 ### Workflow automation
 
-Reduce the repetitive work between systems and teams. Design practical workflows for approvals, document handling, notifications and routine tasks, with human review where it matters.
+Replace repeated data entry and manual handoffs with connected workflows. Automate approvals, document routing and notifications, with review steps for decisions that need human judgment.
 
-### Digital products and customer experiences
+### Software engineering and digital products
 
-Create digital experiences that make a task easier. Plan and build websites, customer portals, internal tools and applications around the people who use them.
+Build applications around the tasks people need to complete. We design and develop websites, customer portals, internal tools and digital products, including improvements to existing software.
 
-### Connected business systems
+### Business system integration
 
-Help information move where it needs to go. Connect business applications through APIs and integrations, and improve the workflows around CRM, ERP and existing enterprise platforms.
+Keep information consistent across the tools your teams use. Connect customer management, finance and other business applications through integrations and application programming interfaces (APIs).
 
 ### Data, analytics and applied AI
 
-Make information easier to trust and use. Develop data pipelines, reporting and dashboards, then explore focused AI applications such as knowledge search or document assistance where the use case supports them.
+Bring data sources together for reporting and analysis. Develop pipelines and dashboards, and evaluate AI for defined uses such as internal knowledge search and document processing.
 
 ### Cloud platforms and delivery operations
 
-Prepare the environment for dependable delivery. Plan cloud changes, automate infrastructure and deployments, and improve visibility into application performance and operating needs.
+Prepare cloud environments for deployment and ongoing operation. Plan migrations, automate infrastructure and releases, and establish monitoring to support maintenance and troubleshooting.
 
 ### Quality, security and resilience
 
-Address reliability throughout the work. Strengthen testing, review access and application risks, and plan recovery and maintenance around the systems your business depends on.
+Assess how applications behave, who can access them and how they recover. Use testing, access reviews and recovery planning to address reliability and security risks.
 
-### Specialist teams and delivery support
+### Technology staffing and dedicated teams
 
-Bring in expertise around a defined need. Explore staff augmentation, permanent hiring or a dedicated engineering team, with responsibilities and handover expectations agreed from the start.
+Add the skills your project or team needs through staff augmentation, permanent hiring or a dedicated engineering team. Agree on the role, working arrangement and onboarding needs before the engagement begins.
 
 ## 5. Why Narrcorp
 
-**Headline:** A clear approach to work that can get complicated.
+**Headline:** Clarity from the first decision to handover.
 
-### Clear decisions before development
+### Scope you can evaluate
 
-Agree on the problem, the scope and what a useful result looks like before committing to the build.
+Agree on priorities, deliverables and responsibilities so you can assess the plan before delivery begins.
 
-### Solutions that fit the work
+### Tools that fit your environment
 
-Choose tools and workflows around your existing environment and the people who will use them.
+Evaluate technology against your existing systems, integration needs and maintenance capacity.
 
-### Operations considered from the start
+### Visibility through delivery
 
-Include testing, documentation, maintenance and handover in the delivery plan.
+Set review points to discuss progress, surface issues and make decisions as the work develops.
 
-### Expertise shaped around the need
+### An organized handover
 
-Match the engagement to the work: focused advice, a delivery project or additional specialist capacity.
+Include documentation, operating guidance and knowledge transfer for delivered systems so your team can maintain them.
 
 These are proposed operating commitments, not evidence of past performance. Confirm the business adopts them before publication.
 
 ## 6. Testimonials
 
-No public copy is drafted because genuine, approved reviews are unavailable. Hide this section until the business supplies a real quotation, accurate attribution and permission to publish.
+No testimonial copy is drafted because genuine, approved reviews are unavailable. Omit this section until the business supplies a real quotation, accurate attribution and permission to publish.
 
 ## 7. Closing CTA
 
-**Headline:** What is getting in the way of your next step?
+**Headline:** Tell us where you need support.
 
-**Supporting copy:** Tell us what you want to improve, what you have in place and where you need support. We can start with a conversation about the work ahead.
+**Supporting copy:** Email a brief outline of your project or hiring need, the systems or skills involved and your preferred timing. We’ll use it to discuss the next step.
 
 **Button:** Email Narrcorp
 
 **Email:** hr@narrcorp.com
+
+All contact buttons open the visitor's email application. The website does not collect or submit enquiries.
 
 ## 8. Footer
 
@@ -110,6 +112,28 @@ No public copy is drafted because genuine, approved reviews are unavailable. Hid
 
 **Contact:** hr@narrcorp.com
 
-**Copyright:** © 2026 Narrcorp. All rights reserved.
+**Copyright:** © [current year] Narrcorp. All rights reserved.
 
-No phone number, postal address, contact form or social contact links are included.
+The year is generated when the static site is built. No phone number, postal address, contact form or social contact links are included.
+
+## 9. Search and social metadata
+
+**Page title:** Narrcorp | Technology Consulting, Engineering & Talent
+
+**Description:** Technology consulting, software engineering and staffing from Narrcorp. Explore cloud, data, automation and system integration for your next project.
+
+The title and description are also used for social preview text.
+
+## 10. Navigation and error messages
+
+**Skip link:** Skip to content
+
+**Mobile navigation:** Menu / Close
+
+**404 page title:** Page not found | Narrcorp
+
+**404 heading:** Let’s get you back on track.
+
+**404 explanation:** The page you’re looking for isn’t here.
+
+**404 action:** Return to Narrcorp

@@ -16,96 +16,96 @@ export const services: readonly Offering[] = [
   {
     title: 'Technology strategy and roadmaps',
     description:
-      'Bring clarity to the next decision. Review your current systems, identify constraints and set a realistic sequence for improvements, budgets and delivery priorities.',
+      'Decide what to change, in what order and why. Assess existing systems, compare options and build a roadmap with priorities, dependencies and budget considerations.',
   },
   {
     title: 'Workflow automation',
     description:
-      'Reduce the repetitive work between systems and teams. Design practical workflows for approvals, document handling, notifications and routine tasks, with human review where it matters.',
+      'Replace repeated data entry and manual handoffs with connected workflows. Automate approvals, document routing and notifications, with review steps for decisions that need human judgment.',
   },
   {
-    title: 'Digital products and customer experiences',
+    title: 'Software engineering and digital products',
     description:
-      'Create digital experiences that make a task easier. Plan and build websites, customer portals, internal tools and applications around the people who use them.',
+      'Build applications around the tasks people need to complete. We design and develop websites, customer portals, internal tools and digital products, including improvements to existing software.',
   },
   {
-    title: 'Connected business systems',
+    title: 'Business system integration',
     description:
-      'Help information move where it needs to go. Connect business applications through APIs and integrations, and improve the workflows around CRM, ERP and existing enterprise platforms.',
+      'Keep information consistent across the tools your teams use. Connect customer management, finance and other business applications through integrations and application programming interfaces (APIs).',
   },
   {
     title: 'Data, analytics and applied AI',
     description:
-      'Make information easier to trust and use. Develop data pipelines, reporting and dashboards, then explore focused AI applications such as knowledge search or document assistance where the use case supports them.',
+      'Bring data sources together for reporting and analysis. Develop pipelines and dashboards, and evaluate AI for defined uses such as internal knowledge search and document processing.',
   },
   {
     title: 'Cloud platforms and delivery operations',
     description:
-      'Prepare the environment for dependable delivery. Plan cloud changes, automate infrastructure and deployments, and improve visibility into application performance and operating needs.',
+      'Prepare cloud environments for deployment and ongoing operation. Plan migrations, automate infrastructure and releases, and establish monitoring to support maintenance and troubleshooting.',
   },
   {
     title: 'Quality, security and resilience',
     description:
-      'Address reliability throughout the work. Strengthen testing, review access and application risks, and plan recovery and maintenance around the systems your business depends on.',
+      'Assess how applications behave, who can access them and how they recover. Use testing, access reviews and recovery planning to address reliability and security risks.',
   },
   {
-    title: 'Specialist teams and delivery support',
+    title: 'Technology staffing and dedicated teams',
     description:
-      'Bring in expertise around a defined need. Explore staff augmentation, permanent hiring or a dedicated engineering team, with responsibilities and handover expectations agreed from the start.',
+      'Add the skills your project or team needs through staff augmentation, permanent hiring or a dedicated engineering team. Agree on the role, working arrangement and onboarding needs before the engagement begins.',
   },
 ];
 export const principles: readonly Offering[] = [
   {
-    title: 'Clear decisions before development',
+    title: 'Scope you can evaluate',
     description:
-      'Agree on the problem, the scope and what a useful result looks like before committing to the build.',
+      'Agree on priorities, deliverables and responsibilities so you can assess the plan before delivery begins.',
   },
   {
-    title: 'Solutions that fit the work',
+    title: 'Tools that fit your environment',
     description:
-      'Choose tools and workflows around your existing environment and the people who will use them.',
+      'Evaluate technology against your existing systems, integration needs and maintenance capacity.',
   },
   {
-    title: 'Operations considered from the start',
+    title: 'Visibility through delivery',
     description:
-      'Include testing, documentation, maintenance and handover in the delivery plan.',
+      'Set review points to discuss progress, surface issues and make decisions as the work develops.',
   },
   {
-    title: 'Expertise shaped around the need',
+    title: 'An organized handover',
     description:
-      'Match the engagement to the work: focused advice, a delivery project or additional specialist capacity.',
+      'Include documentation, operating guidance and knowledge transfer for delivered systems so your team can maintain them.',
   },
 ];
 export const homepage = {
-  title: 'Narrcorp | Technology consulting & digital engineering',
+  title: 'Narrcorp | Technology Consulting, Engineering & Talent',
   description:
-    'Simplify operations, build useful digital experiences and plan your next technology investment with Narrcorp. Explore consulting, engineering and specialist team services.',
+    'Technology consulting, software engineering and staffing from Narrcorp. Explore cloud, data, automation and system integration for your next project.',
   hero: {
     headline: 'Turn business complexity into',
     emphasis: 'practical progress.',
     description:
-      'Simplify everyday operations, create useful digital experiences and plan your next technology investment. Narrcorp brings strategy, engineering and specialist expertise to the work that matters to your business.',
-    primaryAction: 'Start a conversation',
-    secondaryAction: 'Discover our services',
+      'Technology consulting, software engineering and specialist talent to improve how your business operates. Connect systems, modernize applications and simplify the workflows your teams rely on.',
+    primaryAction: 'Email Narrcorp',
+    secondaryAction: 'Explore services',
   },
   about: {
-    headline: 'Start with the business. Build what makes a difference.',
+    headline: 'Close the gap between plans and operations.',
     paragraphs: [
-      'Your next challenge may be a slow process, an ageing application or information spread across too many systems. Choosing another tool is only part of the answer.',
-      'Narrcorp’s approach begins with understanding how the work gets done, where it breaks down and what needs to improve. From there, we help shape a practical scope, choose the right technology and bring together the expertise to deliver it.',
-      'The focus is on solutions your people can use, your systems can support and your business can continue to develop.',
+      'A delayed approval, a disconnected application or an overloaded team can hold back a larger plan.',
+      'Narrcorp brings technology advice and delivery expertise to these gaps. We review how your systems and workflows fit together, then define the improvements and skills the project needs.',
+      'Whether the starting point is one process or a wider modernization effort, the scope follows your priorities and operating constraints.',
     ],
   },
   services: {
-    headline: 'Practical support for your next priority.',
+    headline: 'Technology and talent for better operations.',
     description:
-      'Start with a focused need or plan a broader change. Explore how we can support your next priority.',
+      'Choose focused support for a specific challenge, or combine services across a larger project.',
   },
-  why: { headline: 'A clear approach to work that can get complicated.' },
+  why: { headline: 'Clarity from the first decision to handover.' },
   cta: {
-    headline: 'What is getting in the way of your next step?',
+    headline: 'Tell us where you need support.',
     description:
-      'Tell us what you want to improve, what you have in place and where you need support. We can start with a conversation about the work ahead.',
+      'Email a brief outline of your project or hiring need, the systems or skills involved and your preferred timing. We’ll use it to discuss the next step.',
     action: 'Email Narrcorp',
   },
 } as const;
