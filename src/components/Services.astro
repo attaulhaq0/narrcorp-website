@@ -1,5 +1,32 @@
 ---
-import { homepage, services } from '../data/homepage';
+import { Image } from 'astro:assets';
+import portrait from '../assets/talent-portrait.webp';
+import workflow from '../assets/workflow-illustration.webp';
+import engineering from '../assets/engineering-illustration.webp';
+import { contact, homepage, services } from '../data/homepage';
+const highlights = [
+  {
+    eyebrow: 'Engineering',
+    service: services[2],
+    image: engineering,
+    alt: 'Illustrative application development workflow.',
+    color: 'stone',
+  },
+  {
+    eyebrow: 'Automation',
+    service: services[1],
+    image: workflow,
+    alt: 'Illustrative connected workflow for reviewing and routing tasks.',
+    color: 'mint',
+  },
+  {
+    eyebrow: 'Talent',
+    service: services[7],
+    image: portrait,
+    alt: 'Illustrative portrait representing technology talent.',
+    color: 'blue',
+  },
+];
 ---
 
 <section
@@ -7,22 +34,63 @@ import { homepage, services } from '../data/homepage';
   class="container section services-section"
   aria-labelledby="services-heading"
 >
-  <div class="services-intro">
-    <div>
-      <p class="section-label">Services</p>
-      <h2 id="services-heading">{homepage.services.headline}</h2>
-    </div>
+  <div class="section-intro">
+    <p class="section-label">Our services</p>
+    <h2 id="services-heading">{homepage.services.headline}</h2>
     <p>{homepage.services.description}</p>
   </div>
-  <ol class="service-list">
-    {services.map((service, index) => (
-      <li class="service-row">
-        <span class="service-number" aria-hidden="true">
-          {String(index + 1).padStart(2, '0')}
-        </span>
-        <h3>{service.title}</h3>
-        <p>{service.description}</p>
-      </li>
+  <div class="service-stack">
+    {highlights.map(({ eyebrow, service, image, alt, color }, index) => (
+      <article
+        class={`service-card service-card-${color}`}
+        style={`--card-index: ${index}`}
+      >
+        <div class="service-card-copy">
+          <span class="section-label">{eyebrow}</span>
+          <h3>{service.title}</h3>
+          <p>{service.description}</p>
+          <a class="button" href={contact.href}>
+            Discuss your needs
+          </a>
+        </div>
+        <div class="service-card-art">
+          <Image
+            src={image}
+            alt={alt}
+            width={700}
+            height={650}
+            sizes="(max-width: 760px) 100vw, 48vw"
+            widths={[480, 800]}
+            loading="lazy"
+            quality={85}
+          />
+        </div>
+      </article>
     ))}
-  </ol>
+  </div>
+  <div class="service-directory">
+    <div class="directory-heading">
+      <h3>Explore the full offering.</h3>
+      <p>Start with the challenge you need to solve.</p>
+    </div>
+    <div class="service-list">
+      {services.map((service, index) => (
+        <details class="service-detail">
+          <summary>
+            <span class="service-number" aria-hidden="true">
+              {String(index + 1).padStart(2, '0')}
+            </span>
+            <span>{service.title}</span>
+            <img src="/media/arrow-right.svg" alt="" width="20" height="20" />
+          </summary>
+          <div class="service-detail-body">
+            <p>{service.description}</p>
+            <a class="text-link" href={contact.href}>
+              Email us about this service
+            </a>
+          </div>
+        </details>
+      ))}
+    </div>
+  </div>
 </section>

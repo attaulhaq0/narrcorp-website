@@ -40,7 +40,7 @@ Confirm actual delivery coverage, engagement models and boundaries before public
 
 Use plain English and concrete service descriptions. Avoid unsupported scale, rankings or results. Do not add an industry list, blog, careers portal or additional pages to this scope.
 
-Recommended direction: warm off-white background, ink typography, restrained indigo and coral accents, large editorial headings, spacious service rows and one original hero composition. This visual direction remains a proposal for review.
+Visual direction: white backgrounds, forest-green accents and deep green ink, large serif headings, rounded media cards and generous spacing. The hero combines editorial portraits with gently moving capability cards. Services have three visual highlights followed by an expandable directory covering all eight offerings. Mobile layouts stack the cards; reduced-motion mode removes animation and sticky layering.
 
 Use original or licensed media. Illustrative people must not be represented as actual employees, clients or reviewers. Keep meaningful text in HTML rather than embedding it in images.
 

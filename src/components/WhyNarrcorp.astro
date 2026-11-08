@@ -4,9 +4,17 @@ import { homepage, principles } from '../data/homepage';
 
 <section id="why-narrcorp" class="why-section" aria-labelledby="why-heading">
   <div class="container section why-inner">
-    <div>
+    <div class="why-intro">
       <p class="section-label">Why Narrcorp</p>
       <h2 id="why-heading">{homepage.why.headline}</h2>
+      <img
+        class="why-object"
+        src="/media/connected-object.webp"
+        alt=""
+        width="280"
+        height="280"
+        loading="lazy"
+      />
     </div>
     <ol class="principle-list">
       {principles.map((principle, index) => (

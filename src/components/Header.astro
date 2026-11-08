@@ -3,6 +3,13 @@ import Brand from './Brand.astro';
 import { contact, navigation } from '../data/homepage';
 ---
 
+<div class="announcement">
+  <img src="/media/automation-object.webp" alt="" width="48" height="48" />
+  <p>
+    Technology, delivery and talent. <span>Built around your next step.</span>
+  </p>
+  <a href="#services">Explore services</a>
+</div>
 <header class="site-header">
   <div class="container header-inner">
     <Brand />
@@ -28,7 +35,7 @@ import { contact, navigation } from '../data/homepage';
         <a href={href}>{label}</a>
       ))}
       <a class="button button-small" href={contact.href}>
-        Email Narrcorp <span aria-hidden="true">↗</span>
+        Email Narrcorp
       </a>
     </nav>
   </div>

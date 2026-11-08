@@ -8,7 +8,7 @@ Narrcorp's website is being developed as a focused, responsive landing page that
 
 ## Project status
 
-The first responsive landing page is implemented with Astro, TypeScript and regular CSS using static output. Homepage copy remains a proposal for business review; it does not establish verified delivery capabilities. Production hosting has not been configured.
+The responsive landing page is implemented with Astro, TypeScript and regular CSS using static output. It uses a white and forest-green palette, serif display typography, editorial photography, animated hero cards and layered service cards. Homepage copy remains a proposal for business review; it does not establish verified delivery capabilities. Production hosting has not been configured.
 
 ## Website scope
 
@@ -53,7 +53,7 @@ The production build writes static files to `dist/`. Upload the contents of that
 - `src/pages/`: homepage and custom 404 page.
 - `public/`: files copied directly to the static output, including the favicon and robots policy.
 
-Fonts are served locally. Contact links open the visitor’s email application. The site has no analytics, form service or runtime API credentials. Testimonials are omitted until genuine, approved quotations are available.
+Typography uses browser-native serif and sans-serif fonts. Contact links open the visitor’s email application. The site has no analytics, form service or runtime API credentials. Testimonials are omitted until genuine, approved quotations are available. Photography is illustrative. Visitors can pause hero animation, and reduced-motion preferences are respected.
 
 The development build is excluded from search indexing. Before launch, approve service copy, verify domain/mailbox operation, configure the canonical URL and sitemap, and update the robots policy. See the development guide.
 
