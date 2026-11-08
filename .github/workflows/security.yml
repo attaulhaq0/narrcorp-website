@@ -1,0 +1,35 @@
+name: Publication security
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  publication-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out history
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Check tracked publication paths
+        run: python3 scripts/check-public-files.py
+      - name: Install verified Gitleaks release
+        shell: bash
+        run: |
+          set -euo pipefail
+          version=8.30.1
+          archive="gitleaks_${version}_linux_x64.tar.gz"
+          base="https://github.com/gitleaks/gitleaks/releases/download/v${version}"
+          tools_dir="$(mktemp -d)"
+          cd "$tools_dir"
+          curl --fail --silent --show-error --location "$base/$archive" -o "$archive"
+          curl --fail --silent --show-error --location "$base/gitleaks_${version}_checksums.txt" -o checksums.txt
+          awk -v name="$archive" '$2 == name { print }' checksums.txt > selected-checksum.txt
+          test -s selected-checksum.txt
+          sha256sum --check selected-checksum.txt
+          tar -xzf "$archive" gitleaks
+          echo "$tools_dir" >> "$GITHUB_PATH"
+      - name: Scan complete history
+        run: gitleaks git . --redact --no-banner
