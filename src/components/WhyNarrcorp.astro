@@ -1,0 +1,25 @@
+---
+import { homepage, principles } from '../data/homepage';
+---
+
+<section id="why-narrcorp" class="why-section" aria-labelledby="why-heading">
+  <div class="container section why-inner">
+    <div>
+      <p class="section-label">Why Narrcorp</p>
+      <h2 id="why-heading">{homepage.why.headline}</h2>
+    </div>
+    <ol class="principle-list">
+      {principles.map((principle, index) => (
+        <li>
+          <span class="principle-number" aria-hidden="true">
+            {String(index + 1).padStart(2, '0')}
+          </span>
+          <div>
+            <h3>{principle.title}</h3>
+            <p>{principle.description}</p>
+          </div>
+        </li>
+      ))}
+    </ol>
+  </div>
+</section>

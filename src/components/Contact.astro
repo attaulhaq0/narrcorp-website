@@ -1,0 +1,21 @@
+---
+import { contact, homepage } from '../data/homepage';
+---
+
+<section id="contact" class="contact-section" aria-labelledby="contact-heading">
+  <div class="container section contact-inner">
+    <div>
+      <h2 id="contact-heading">{homepage.cta.headline}</h2>
+      <p>{homepage.cta.description}</p>
+    </div>
+    <div class="contact-actions">
+      <a class="button" href={contact.href}>
+        {homepage.cta.action}
+        <span aria-hidden="true">↗</span>
+      </a>
+      <a class="contact-email" href={contact.href}>
+        {contact.email}
+      </a>
+    </div>
+  </div>
+</section>

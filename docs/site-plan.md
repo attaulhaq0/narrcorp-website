@@ -10,16 +10,16 @@ Lead with business problems and useful next steps. Proposed services require bus
 
 ## Page structure
 
-| Section | Content | Visitor action |
-| --- | --- | --- |
-| Header | Narrcorp wordmark; About, Services and Why Narrcorp anchors; Let's talk button | Navigate or email |
-| Hero | One clear business headline, supporting paragraph and original visual | Start a conversation or view services |
-| About | Business-first proposition and engagement approach | Understand the offering |
-| Services | Eight concise service groups describing useful work | Identify a relevant need |
-| Why Narrcorp | Clear scope, usable solutions, operational planning and flexible expertise | Assess the approach |
-| Testimonials | Real, permissioned customer quotations with accurate attribution | Assess credible proof |
-| CTA | Direct invitation and guidance on what to include in an email | Email hr@narrcorp.com |
-| Footer | Narrcorp name, copyright and email as the only contact information | Email |
+| Section      | Content                                                                        | Visitor action                        |
+| ------------ | ------------------------------------------------------------------------------ | ------------------------------------- |
+| Header       | Narrcorp wordmark; About, Services and Why Narrcorp anchors; Let's talk button | Navigate or email                     |
+| Hero         | One clear business headline, supporting paragraph and original visual          | Start a conversation or view services |
+| About        | Business-first proposition and engagement approach                             | Understand the offering               |
+| Services     | Eight concise service groups describing useful work                            | Identify a relevant need              |
+| Why Narrcorp | Clear scope, usable solutions, operational planning and flexible expertise     | Assess the approach                   |
+| Testimonials | Real, permissioned customer quotations with accurate attribution               | Assess credible proof                 |
+| CTA          | Direct invitation and guidance on what to include in an email                  | Email hr@narrcorp.com                 |
+| Footer       | Narrcorp name, copyright and email as the only contact information             | Email                                 |
 
 If testimonials are unavailable, omit the section. Do not publish placeholders, invented names, ratings, logos, metrics or reviews. The remaining seven sections still form the complete landing page.
 
@@ -48,6 +48,6 @@ Use original or licensed media. Illustrative people must not be represented as a
 
 Contact buttons use mailto:hr@narrcorp.com. This opens the visitor's configured email application; it does not submit a form or confirm delivery.
 
-Build static HTML, CSS and minimal JavaScript. Use progressive enhancement for mobile navigation, visible keyboard focus, readable contrast, semantic headings, reduced-motion support and responsive images. Optional video needs a still-image fallback and must not obscure the headline or CTA.
+Build with Astro, TypeScript and regular CSS using static output. Astro produces HTML, CSS, responsive images and minimal JavaScript for hosting. Use progressive enhancement for mobile navigation, visible keyboard focus, readable contrast, semantic headings, reduced-motion support and responsive images. Optional video needs a still-image fallback and must not obscure the headline or CTA.
 
 Verify phone, tablet and desktop layouts, keyboard navigation, anchors, email links, image sizing and publishing checks before release. Hostinger is the planned hosting provider. The purchased plan, domain ownership and mailbox operation remain operational checks before launch. See the development guide for the proposed stack and release process.

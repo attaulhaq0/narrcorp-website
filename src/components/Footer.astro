@@ -1,0 +1,10 @@
+---
+import Brand from './Brand.astro';
+import { contact } from '../data/homepage';
+---
+
+<footer class="site-footer container">
+  <Brand />
+  <a href={contact.href}>{contact.email}</a>
+  <p>© {new Date().getFullYear()} Narrcorp. All rights reserved.</p>
+</footer>

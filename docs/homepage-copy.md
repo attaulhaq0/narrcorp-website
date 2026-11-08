@@ -12,8 +12,6 @@ Editorial proposal for business review. Confirm every service is offered before 
 
 ## 2. Hero
 
-**Eyebrow:** Technology for the way your business works
-
 **Headline:** Turn business complexity into practical progress.
 
 **Supporting copy:** Simplify everyday operations, create useful digital experiences and plan your next technology investment. Narrcorp brings strategy, engineering and specialist expertise to the work that matters to your business.

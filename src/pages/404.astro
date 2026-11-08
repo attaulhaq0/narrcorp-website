@@ -1,0 +1,21 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import Brand from '../components/Brand.astro';
+---
+
+<SiteLayout
+  title="Page not found | Narrcorp"
+  description="Return to the Narrcorp homepage."
+>
+  <header class="container error-header">
+    <Brand />
+  </header>
+  <main id="main-content" class="container section error-page">
+    <p class="section-label">Page not found</p>
+    <h1>Let’s get you back on track.</h1>
+    <p>The page you’re looking for isn’t here.</p>
+    <a href="/" class="button">
+      Return to Narrcorp <span aria-hidden="true">→</span>
+    </a>
+  </main>
+</SiteLayout>

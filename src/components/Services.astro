@@ -1,0 +1,28 @@
+---
+import { homepage, services } from '../data/homepage';
+---
+
+<section
+  id="services"
+  class="container section services-section"
+  aria-labelledby="services-heading"
+>
+  <div class="services-intro">
+    <div>
+      <p class="section-label">Services</p>
+      <h2 id="services-heading">{homepage.services.headline}</h2>
+    </div>
+    <p>{homepage.services.description}</p>
+  </div>
+  <ol class="service-list">
+    {services.map((service, index) => (
+      <li class="service-row">
+        <span class="service-number" aria-hidden="true">
+          {String(index + 1).padStart(2, '0')}
+        </span>
+        <h3>{service.title}</h3>
+        <p>{service.description}</p>
+      </li>
+    ))}
+  </ol>
+</section>

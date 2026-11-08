@@ -8,7 +8,7 @@ Narrcorp's website is being developed as a focused, responsive landing page that
 
 ## Project status
 
-Content and site planning are underway. Homepage copy is a proposal for business review; it does not establish verified delivery capabilities. The finished website has not been implemented or deployed.
+The first responsive landing page is implemented with Astro, TypeScript and regular CSS using static output. Homepage copy remains a proposal for business review; it does not establish verified delivery capabilities. Production hosting has not been configured.
 
 ## Website scope
 
@@ -25,6 +25,38 @@ The contact journey uses email. The initial scope has no contact form, applicati
 
 ## Development
 
-Implementation will follow the selected visual direction. Commits describe concrete changes, keep unrelated work separate and pass the publishing checks before they are pushed.
+Use Node 24 LTS (or a supported version satisfying package.json) and npm.
+
+```sh
+npm ci
+npm run dev
+```
+
+Open the local address printed by Astro. Changes to source files update the development preview.
+
+```sh
+npm run format:check
+npm run check
+npm run build
+npm run preview
+```
+
+The production build writes static files to `dist/`. Upload the contents of that folder to the configured Hostinger website root after completing the launch checks. Node is a development/build requirement; the static production site does not need a Node server.
+
+## Source map
+
+- `src/data/homepage.ts`: typed homepage copy, services, principles and email.
+- `src/components/`: header, hero and individual page sections.
+- `src/layouts/SiteLayout.astro`: HTML document, metadata, fonts and global styles.
+- `src/styles/global.css`: colors, typography, layout and responsive rules.
+- `src/assets/`: artwork processed into responsive images by Astro.
+- `src/pages/`: homepage and custom 404 page.
+- `public/`: files copied directly to the static output, including the favicon and robots policy.
+
+Fonts are served locally. Contact links open the visitor’s email application. The site has no analytics, form service or runtime API credentials. Testimonials are omitted until genuine, approved quotations are available.
+
+The development build is excluded from search indexing. Before launch, approve service copy, verify domain/mailbox operation, configure the canonical URL and sitemap, and update the robots policy. See the development guide.
+
+GitHub Actions checks formatting, types, the static build, tracked publication paths and complete Git history for exposed secrets.
 
 Maintained by [Sheikh Atta-ul-Haq](https://github.com/attaulhaq0).

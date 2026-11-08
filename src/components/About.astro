@@ -1,0 +1,19 @@
+---
+import { homepage } from '../data/homepage';
+---
+
+<section
+  id="about"
+  class="container section about-section"
+  aria-labelledby="about-heading"
+>
+  <div>
+    <p class="section-label">About Narrcorp</p>
+    <h2 id="about-heading">{homepage.about.headline}</h2>
+  </div>
+  <div class="about-copy">
+    {homepage.about.paragraphs.map((paragraph) => (
+      <p>{paragraph}</p>
+    ))}
+  </div>
+</section>
