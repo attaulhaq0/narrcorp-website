@@ -274,29 +274,7 @@ p {
 .hero-primary {
   margin-top: 3px;
 }
-.hero-stage {
-  position: relative;
-  width: min(1370px, 100%);
-  height: 480px;
-  margin: 48px auto 0;
-  isolation: isolate;
-}
-.hero-portrait {
-  width: 60%;
-  height: 430px;
-  position: absolute;
-  left: 20%;
-  top: 0;
-  background: #328528;
-  border-radius: 24px;
-  overflow: hidden;
-}
-.hero-portrait > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 37%;
-}
+
 .image-chip {
   position: absolute;
   top: 22px;
@@ -307,107 +285,7 @@ p {
   font-size: 14px;
   box-shadow: 0 6px 30px #13212810;
 }
-.capability-rail {
-  position: absolute;
-  bottom: 24px;
-  left: 24px;
-  right: 24px;
-  display: flex;
-  gap: 8px;
-  overflow: hidden;
-  white-space: nowrap;
-}
-.capability-rail span {
-  padding: 10px 16px;
-  background: #fff;
-  border-radius: 40px;
-  font-size: 12px;
-}
-.floating-card {
-  position: absolute;
-  background: #fff;
-  border: 1px solid #e9ece9;
-  border-radius: 20px;
-  box-shadow: 0 18px 60px #13212812;
-  animation: float-card 7s ease-in-out infinite;
-}
-.hero-workflow {
-  left: 3.5%;
-  top: 162px;
-  z-index: 2;
-  width: 25%;
-  max-width: 306px;
-  padding: 24px;
-}
-.card-eyebrow {
-  font-size: 12px;
-  color: var(--body);
-  display: block;
-  margin-bottom: 12px;
-}
-.hero-workflow strong {
-  font-family: var(--serif);
-  font-size: 28px;
-  line-height: 1.1;
-  font-weight: 400;
-  display: block;
-  margin-bottom: 18px;
-}
-.workflow-step {
-  font-size: 12px;
-  padding: 13px 0;
-  border-top: 1px solid #edf0ed;
-  display: flex;
-  gap: 9px;
-  align-items: center;
-}
-.status-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--green);
-  flex-shrink: 0;
-}
-.hero-talent {
-  right: 3%;
-  top: 85px;
-  width: 20%;
-  max-width: 250px;
-  overflow: hidden;
-  animation-delay: -3s;
-  z-index: 2;
-}
-.hero-talent > img {
-  width: 100%;
-  height: 183px;
-  object-fit: cover;
-  object-position: center 26%;
-  background: var(--blue);
-}
-.hero-talent > div {
-  padding: 20px;
-}
-.hero-talent strong {
-  font-family: var(--serif);
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 1.15;
-}
-.hero-talent .card-eyebrow {
-  margin-bottom: 8px;
-}
-.hero-systems {
-  left: 42%;
-  top: 416px;
-  padding: 13px 20px;
-  font-size: 12px;
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  border-radius: 50px;
-  animation-delay: -5s;
-  z-index: 3;
-}
+
 .hero-bottom {
   display: flex;
   justify-content: center;
@@ -425,18 +303,7 @@ p {
 .motion-toggle:hover {
   text-decoration: underline;
 }
-.hero-stage.is-paused .floating-card {
-  animation-play-state: paused;
-}
-@keyframes float-card {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-12px);
-  }
-}
+
 .about-section {
   border-top: 1px solid #edf0ed;
   margin-top: 38px;
@@ -480,19 +347,19 @@ p {
 }
 .service-stack {
   display: grid;
-  gap: 28px;
+  gap: 40vh;
 }
 .service-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-height: 480px;
-  border-radius: 24px;
+  min-height: 600px;
+  border-radius: 21px;
   overflow: hidden;
   background: #fafafa;
   position: sticky;
-  top: calc(98px + var(--card-index) * 14px);
+  top: 15%;
   border: 1px solid #edf0ed;
-  box-shadow: 0 -4px 16px #13212803;
+  box-shadow: 0 58px 35px #00000003;
 }
 .service-card-copy {
   padding: 58px 46px;
@@ -746,15 +613,6 @@ p {
   .hero h1 {
     font-size: 80px;
   }
-  .hero-stage {
-    height: 510px;
-  }
-  .hero-portrait {
-    height: 460px;
-  }
-  .hero-systems {
-    top: 447px;
-  }
 }
 @media (max-width: 1000px) {
   .container {
@@ -763,41 +621,7 @@ p {
   .primary-navigation {
     gap: 22px;
   }
-  .hero-stage {
-    height: 405px;
-  }
-  .hero-portrait {
-    height: 350px;
-    width: 64%;
-    left: 18%;
-  }
-  .hero-workflow {
-    left: 2%;
-    top: 120px;
-    padding: 18px;
-    width: 28%;
-  }
-  .hero-workflow strong {
-    font-size: 24px;
-  }
-  .hero-talent {
-    right: 2%;
-    width: 22%;
-    top: 60px;
-  }
-  .hero-talent > img {
-    height: 140px;
-  }
-  .hero-talent > div {
-    padding: 15px;
-  }
-  .hero-talent strong {
-    font-size: 21px;
-  }
-  .hero-systems {
-    top: 334px;
-    left: 38%;
-  }
+
   .hero-points {
     gap: 22px;
   }
@@ -924,20 +748,7 @@ p {
   .hero-primary {
     padding: 16px 26px;
   }
-  .hero-stage {
-    margin-top: 34px;
-    height: 435px;
-    max-width: 530px;
-  }
-  .hero-portrait {
-    width: 90%;
-    left: 5%;
-    height: 310px;
-    border-radius: 20px;
-  }
-  .hero-portrait > img {
-    object-position: center 30%;
-  }
+
   .image-chip {
     font-size: 11px;
     padding: 10px 12px;
@@ -945,60 +756,7 @@ p {
     left: 16px;
     border-radius: 9px;
   }
-  .capability-rail {
-    left: 16px;
-    right: 16px;
-    bottom: 18px;
-  }
-  .capability-rail span {
-    font-size: 10px;
-    padding: 8px 11px;
-  }
-  .hero-workflow {
-    left: 3%;
-    top: 253px;
-    width: 57%;
-    max-width: none;
-    padding: 15px;
-    border-radius: 15px;
-  }
-  .hero-workflow .card-eyebrow {
-    font-size: 10px;
-    margin-bottom: 9px;
-  }
-  .hero-workflow strong {
-    font-size: 23px;
-    margin-bottom: 9px;
-  }
-  .workflow-step {
-    font-size: 10px;
-    padding: 8px 0;
-  }
-  .hero-workflow .workflow-step:last-child {
-    display: none;
-  }
-  .hero-talent {
-    right: 3%;
-    top: 210px;
-    width: 34%;
-    border-radius: 15px;
-  }
-  .hero-talent > img {
-    height: 132px;
-  }
-  .hero-talent > div {
-    padding: 12px;
-  }
-  .hero-talent .card-eyebrow {
-    font-size: 9px;
-    margin-bottom: 6px;
-  }
-  .hero-talent strong {
-    font-size: 18px;
-  }
-  .hero-systems {
-    display: none;
-  }
+
   .hero-bottom {
     padding-top: 17px;
     gap: 22px;
@@ -1172,6 +930,49 @@ p {
   }
   .site-footer p {
     font-size: 11px;
+  }
+}
+.hero-stage {
+  width: 100%;
+  height: auto;
+  max-width: none;
+  aspect-ratio: 2758 / 932;
+  margin: 48px auto 32px;
+}
+.hero-sequence {
+  display: none;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2758 / 932;
+}
+.hero-stage.is-enhanced .hero-sequence {
+  display: block;
+}
+.hero-stage noscript img {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 991px) {
+  .hero-stage,
+  .hero-sequence {
+    aspect-ratio: 1514 / 1356;
+  }
+  .service-stack {
+    gap: 64px;
+  }
+  .service-card {
+    position: static;
+    min-height: auto;
+  }
+}
+@media (max-width: 767px) {
+  .hero-stage,
+  .hero-sequence {
+    aspect-ratio: 750 / 1292;
+  }
+  .hero-stage {
+    margin-top: 34px;
+    margin-bottom: 0;
   }
 }
 @media (prefers-reduced-motion: reduce) {

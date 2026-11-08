@@ -6,7 +6,13 @@ import { homepage, principles } from '../data/homepage';
   <div class="container section why-inner">
     <div class="why-intro">
       <p class="section-label">Why Narrcorp</p>
-      <h2 id="why-heading">{homepage.why.headline}</h2>
+      <h2
+        id="why-heading"
+        data-scroll-highlight
+        aria-label={homepage.why.headline}
+      >
+        {homepage.why.headline}
+      </h2>
       <img
         class="why-object"
         src="/media/connected-object.webp"

@@ -40,7 +40,7 @@ Confirm actual delivery coverage, engagement models and boundaries before public
 
 Use plain English and concrete service descriptions. Avoid unsupported scale, rankings or results. Do not add an industry list, blog, careers portal or additional pages to this scope.
 
-Visual direction: white backgrounds, forest-green accents and deep green ink, large serif headings, rounded media cards and generous spacing. The hero combines editorial portraits with gently moving capability cards. Services have three visual highlights followed by an expandable directory covering all eight offerings. Mobile layouts stack the cards; reduced-motion mode removes animation and sticky layering.
+Visual direction: white backgrounds, forest-green accents and deep green ink, large serif headings, rounded media cards and generous spacing. The hero uses a responsive 60 fps sequence with illustrative portraits, moving callouts, learning progress and a workflow demonstration. Services have three visual highlights followed by an expandable directory covering all eight offerings. Cards share a sticky position on desktop and stack normally on phones and tablets. Reduced-motion mode pauses video and removes scroll animation and sticky layering.
 
 Use original or licensed media. Illustrative people must not be represented as actual employees, clients or reviewers. Keep meaningful text in HTML rather than embedding it in images.
 
