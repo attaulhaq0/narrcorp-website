@@ -8,11 +8,11 @@ Narrcorp's website is being developed as a focused, responsive landing page that
 
 ## Project status
 
-The responsive landing page is implemented with Astro, TypeScript and regular CSS using static output. It uses a white and forest-green palette, serif display typography, illustrative photography, a responsive animated hero sequence and layered service cards. Homepage copy remains a proposal for business review; it does not establish verified delivery capabilities. Production hosting has not been configured.
+The responsive landing page is implemented with Astro, TypeScript and regular CSS using static output. It uses white, mint and forest-green surfaces, serif display typography, illustrative photography, a responsive animated hero and layered service cards. The static release includes production search metadata and Hostinger configuration for https://narrcorp.com/. Business approval, domain hosting and mailbox verification are launch responsibilities.
 
 ## Website scope
 
-Header and navigation, hero, about, services, why Narrcorp, approved testimonials when available, closing call to action, and footer with email contact.
+Header and announcement, hero, technology examples, about, eight services, why Narrcorp, technology ecosystem, industry planning scenarios, specialist expertise, practical guidance, closing call to action, and footer with email contact.
 
 The contact journey uses email. The initial scope has no contact form, application upload, user accounts or backend service.
 
@@ -54,9 +54,9 @@ The production build writes static files to `dist/`. Upload the contents of that
 - `src/pages/`: homepage and custom 404 page.
 - `public/`: files copied directly to the static output, including the favicon and robots policy.
 
-Typography uses browser-native serif and sans-serif fonts. Contact links open the visitor’s email application. The site has no analytics, form service or runtime API credentials. Testimonials are omitted until genuine, approved quotations are available. Photography is illustrative. Visitors can pause hero animation, and reduced-motion preferences are respected.
+Typography combines self-hosted Manrope with a system serif. Contact links open the visitor’s email application. The site has no analytics, form service or runtime API credentials. Testimonials are omitted until genuine, approved quotations are available. Photography and industry scenarios are illustrative; platform examples do not represent customer or partnership relationships. An icon control pauses decorative motion, and reduced-motion preferences are respected.
 
-The development build is excluded from search indexing. Before launch, approve service copy, verify domain/mailbox operation, configure the canonical URL and sitemap, and update the robots policy. See the development guide.
+The production homepage is indexable and has a canonical URL, sitemap, Open Graph image and structured service data. The 404 page is excluded from indexing. Keep externally shared review deployments access-protected or add a hosting-level noindex header. See the development guide for deployment and verification.
 
 GitHub Actions checks formatting, types, the static build, tracked publication paths and complete Git history for exposed secrets.
 

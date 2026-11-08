@@ -1,0 +1,83 @@
+---
+import { platforms } from '../data/experience';
+interface Props {
+  variant?: 'marquee' | 'ecosystem';
+}
+const { variant = 'marquee' } = Astro.props;
+---
+
+{variant === 'marquee' ? (
+  <section class="platform-section" aria-labelledby="platform-heading">
+    <div class="container">
+      <p id="platform-heading" class="platform-caption">
+        Technology examples for the work ahead.
+      </p>
+    </div>
+    <div class="platform-rows" aria-hidden="true">
+      {[platforms.slice(0, 4), platforms.slice(4)].map((row, index) => (
+        <div class={`platform-row platform-row-${index}`}>
+          {[0, 1, 2, 3].map(() => (
+            <div class="platform-group">
+              {row.map((platform) => (
+                <div class="platform-tile">
+                  <img
+                    src={`/media/platform-${platform.asset}`}
+                    alt=""
+                    width="42"
+                    height="42"
+                    loading="lazy"
+                  />
+                  <span>{platform.name}</span>
+                </div>
+              ))}
+            </div>
+          ))}
+        </div>
+      ))}
+    </div>
+    <p class="sr-only">
+      {platforms.map((p) => p.name).join(', ')}. Technology examples; no
+      customer or partnership relationship is implied.
+    </p>
+    <p class="platform-disclaimer container">
+      Platform names are illustrative. No customer or partnership relationship
+      is implied.
+    </p>
+  </section>
+) : (
+  <section class="ecosystem-section" aria-labelledby="ecosystem-heading">
+    <div class="container ecosystem-stage">
+      <div class="ecosystem-copy">
+        <p class="section-label">Technology ecosystem</p>
+        <h2 id="ecosystem-heading">
+          The right tools.
+          <br />A connected approach.
+        </h2>
+        <p>
+          Evaluate platforms against your systems, your team and the work ahead.
+        </p>
+        <p class="ecosystem-disclaimer">
+          Illustrative platforms. No partnership relationship is implied.
+        </p>
+        <a class="button" href="#services">
+          Explore services
+        </a>
+      </div>
+      {platforms.map((platform, index) => (
+        <div class={`ecosystem-icon ecosystem-icon-${index}`}>
+          <img
+            src={`/media/platform-${platform.asset}`}
+            alt={platform.name}
+            width="52"
+            height="52"
+            loading="lazy"
+          />
+        </div>
+      ))}
+      <span class="ecosystem-square square-one" aria-hidden="true"></span>
+      <span class="ecosystem-square square-two" aria-hidden="true"></span>
+      <span class="ecosystem-square square-three" aria-hidden="true"></span>
+      <span class="ecosystem-square square-four" aria-hidden="true"></span>
+    </div>
+  </section>
+)}

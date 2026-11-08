@@ -1,0 +1,126 @@
+---
+import { Image } from 'astro:assets';
+import healthcare from '../assets/healthcare-context.webp';
+import finance from '../assets/finance-context.webp';
+import retail from '../assets/retail-context.webp';
+import { scenarios } from '../data/experience';
+import { contact } from '../data/homepage';
+const images = [healthcare, finance, retail];
+---
+
+<section
+  id="industries"
+  class="industry-section section"
+  aria-labelledby="industry-heading"
+>
+  <div class="container">
+    <div class="section-intro">
+      <p class="section-label">A practical starting point</p>
+      <h2 id="industry-heading">
+        Technology decisions need
+        <br />
+        business context.
+      </h2>
+      <p>
+        Illustrative planning scenarios. The scope of any engagement is agreed
+        separately.
+      </p>
+    </div>
+    <div class="scenario-panels">
+      {scenarios.map((scenario, index) => (
+        <article
+          id={`scenario-${scenario.id}`}
+          class="scenario-panel"
+          aria-labelledby={`scenario-title-${scenario.id}`}
+        >
+          <div class="scenario-copy">
+            <p class="section-label">{scenario.label}</p>
+            <h3 id={`scenario-title-${scenario.id}`}>{scenario.title}</h3>
+            <p>{scenario.description}</p>
+            <p class="scenario-focus">{scenario.focus}</p>
+            <span class="scenario-note">Planning scenario</span>
+          </div>
+          <Image
+            src={images[index]}
+            alt={
+              index === 0
+                ? 'Illustrative healthcare administration workspace.'
+                : index === 1
+                  ? 'Illustrative finance operations desk.'
+                  : 'Illustrative retail shop interior.'
+            }
+            widths={[480, 800, 1200]}
+            sizes="(max-width: 760px) 100vw, 50vw"
+            width={900}
+            height={600}
+            loading="lazy"
+            quality={85}
+          />
+        </article>
+      ))}
+    </div>
+    <div class="scenario-tabs" aria-label="Industry planning scenarios" hidden>
+      {scenarios.map((scenario, index) => (
+        <button
+          type="button"
+          id={`tab-${scenario.id}`}
+          aria-controls={`scenario-${scenario.id}`}
+          aria-selected={index === 0}
+          tabindex={index === 0 ? 0 : -1}
+        >
+          {scenario.label}
+        </button>
+      ))}
+    </div>
+    <div class="section-actions">
+      <a class="button" href={contact.href}>
+        Email your requirement
+      </a>
+      <a class="button button-outline" href="#expertise">
+        Explore expertise
+      </a>
+    </div>
+  </div>
+</section>
+<script>
+  const tabs = document.querySelector<HTMLElement>('.scenario-tabs');
+  const buttons = Array.from(
+    tabs?.querySelectorAll<HTMLButtonElement>('button') ?? [],
+  );
+  const panels = Array.from(
+    document.querySelectorAll<HTMLElement>('.scenario-panel'),
+  );
+  if (tabs && buttons.length && panels.length) {
+    tabs.hidden = false;
+    tabs.setAttribute('role', 'tablist');
+    buttons.forEach((b) => b.setAttribute('role', 'tab'));
+    panels.forEach((panel, index) => {
+      panel.setAttribute('role', 'tabpanel');
+      panel.setAttribute('aria-labelledby', buttons[index].id);
+      panel.tabIndex = 0;
+    });
+    const activate = (index: number, focus = false) => {
+      buttons.forEach((b, i) => {
+        b.setAttribute('aria-selected', String(i === index));
+        b.tabIndex = i === index ? 0 : -1;
+        panels[i].hidden = i !== index;
+      });
+      if (focus) buttons[index].focus();
+    };
+    activate(0);
+    buttons.forEach((button, index) => {
+      button.addEventListener('click', () => activate(index));
+      button.addEventListener('keydown', (event) => {
+        let target = index;
+        if (event.key === 'ArrowRight') target = (index + 1) % buttons.length;
+        else if (event.key === 'ArrowLeft')
+          target = (index + buttons.length - 1) % buttons.length;
+        else if (event.key === 'Home') target = 0;
+        else if (event.key === 'End') target = buttons.length - 1;
+        else return;
+        event.preventDefault();
+        activate(target, true);
+      });
+    });
+  }
+</script>

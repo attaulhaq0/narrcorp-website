@@ -7,15 +7,24 @@ import Services from '../components/Services.astro';
 import WhyNarrcorp from '../components/WhyNarrcorp.astro';
 import Contact from '../components/Contact.astro';
 import Footer from '../components/Footer.astro';
+import Technology from '../components/Technology.astro';
+import Industry from '../components/Industry.astro';
+import Expertise from '../components/Expertise.astro';
+import Guidance from '../components/Guidance.astro';
 ---
 
 <SiteLayout>
   <Header />
   <main id="main-content" tabindex="-1">
     <Hero />
+    <Technology />
     <About />
     <Services />
     <WhyNarrcorp />
+    <Technology variant="ecosystem" />
+    <Industry />
+    <Expertise />
+    <Guidance />
     <Contact />
   </main>
   <Footer />

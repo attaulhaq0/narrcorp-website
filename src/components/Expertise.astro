@@ -1,0 +1,111 @@
+---
+import { Image } from 'astro:assets';
+import cloud from '../assets/expert-cloud.webp';
+import engineering from '../assets/expert-engineering.webp';
+import data from '../assets/expert-data.webp';
+import quality from '../assets/expert-quality.webp';
+import { expertise } from '../data/experience';
+const images = [cloud, engineering, data, quality];
+---
+
+<section
+  id="expertise"
+  class="expertise-section section"
+  aria-labelledby="expertise-heading"
+>
+  <div class="container section-intro">
+    <p class="section-label">Specialist expertise</p>
+    <h2 id="expertise-heading">
+      Skills with a clear
+      <br />
+      place in your project.
+    </h2>
+    <p>
+      Technical disciplines to consider when shaping a team. Portraits are
+      illustrative.
+    </p>
+  </div>
+  <div
+    class="expertise-track container"
+    aria-label="Technical disciplines"
+    tabindex="0"
+  >
+    {expertise.map((item, index) => (
+      <article class="expertise-card">
+        <Image
+          src={images[index]}
+          alt=""
+          width={420}
+          height={630}
+          widths={[360, 600]}
+          sizes="(max-width: 760px) 75vw, 300px"
+          loading="lazy"
+          quality={85}
+        />
+        <div class="expertise-card-copy">
+          <h3>{item.title}</h3>
+          <p>{item.description}</p>
+          <div class="expertise-tags">
+            {item.tags.map((tag) => (
+              <span>{tag}</span>
+            ))}
+          </div>
+        </div>
+      </article>
+    ))}
+  </div>
+  <div class="carousel-controls container" hidden>
+    <button class="icon-button" type="button" aria-label="Previous expertise">
+      <img src="/media/arrow-left.svg" alt="" width="20" height="20" />
+    </button>
+    <span class="carousel-status" aria-live="polite">
+      1 / 4
+    </span>
+    <button class="icon-button" type="button" aria-label="Next expertise">
+      <img src="/media/arrow-right.svg" alt="" width="20" height="20" />
+    </button>
+  </div>
+</section>
+<script>
+  const track = document.querySelector<HTMLElement>('.expertise-track');
+  const controls = document.querySelector<HTMLElement>('.carousel-controls');
+  if (track && controls) {
+    controls.hidden = false;
+    const cards = Array.from(
+      track.querySelectorAll<HTMLElement>('.expertise-card'),
+    );
+    const previous = controls.querySelector<HTMLButtonElement>(
+      '[aria-label="Previous expertise"]',
+    )!;
+    const next = controls.querySelector<HTMLButtonElement>(
+      '[aria-label="Next expertise"]',
+    )!;
+    const status = controls.querySelector<HTMLElement>('.carousel-status')!;
+    const update = () => {
+      const at = Math.round(track.scrollLeft / (cards[0].offsetWidth + 24));
+      status.textContent = `${Math.min(at + 1, cards.length)} / ${cards.length}`;
+      previous.disabled = track.scrollLeft < 5;
+      next.disabled =
+        track.scrollLeft >= track.scrollWidth - track.clientWidth - 5;
+    };
+    const move = (direction: number) =>
+      track.scrollBy({
+        left: direction * (cards[0].offsetWidth + 24),
+        behavior:
+          document.documentElement.dataset.motion === 'off'
+            ? 'instant'
+            : 'smooth',
+      });
+    previous.addEventListener('click', () => move(-1));
+    next.addEventListener('click', () => move(1));
+    track.addEventListener('keydown', (event) => {
+      if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') {
+        event.preventDefault();
+        move(event.key === 'ArrowRight' ? 1 : -1);
+      }
+    });
+    track.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  }
+</script>

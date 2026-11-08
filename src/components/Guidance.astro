@@ -1,0 +1,69 @@
+---
+import { Image } from 'astro:assets';
+import scope from '../assets/guidance-scope.webp';
+import teams from '../assets/guidance-teams.webp';
+import systems from '../assets/guidance-systems.webp';
+import { guidance } from '../data/experience';
+const images = [scope, teams, systems];
+---
+
+<section
+  id="guidance"
+  class="guidance-section container section"
+  aria-labelledby="guidance-heading"
+>
+  <div class="section-intro">
+    <p class="section-label">Practical guidance</p>
+    <h2 id="guidance-heading">
+      A clearer brief.
+      <br />A more useful first conversation.
+    </h2>
+    <p>
+      Consider the scope, the people and the operating responsibilities before
+      your next technology decision.
+    </p>
+  </div>
+  <div class="guidance-grid">
+    {guidance.map((guide, index) => (
+      <details class="guidance-card" id={`guide-${guide.id}`}>
+        <summary>
+          <Image
+            src={images[index]}
+            alt=""
+            width={640}
+            height={360}
+            widths={[480, 800]}
+            sizes="(max-width: 760px) 100vw, 33vw"
+            loading="lazy"
+            quality={85}
+          />
+          <span class="section-label">{guide.category}</span>
+          <h3>{guide.title}</h3>
+          <p>{guide.description}</p>
+          <span class="guidance-read">
+            <span class="guidance-open-label">Read guidance</span>
+            <span class="guidance-close-label">Close guidance</span>{' '}
+            <img src="/media/arrow-right.svg" alt="" width="18" height="18" />
+          </span>
+        </summary>
+        <div class="guidance-body">
+          {guide.paragraphs.map((p) => (
+            <p>{p}</p>
+          ))}
+        </div>
+      </details>
+    ))}
+  </div>
+</section>
+<script>
+  const openLinkedGuide = () => {
+    const target = document.getElementById(location.hash.slice(1));
+    if (
+      target instanceof HTMLDetailsElement &&
+      target.classList.contains('guidance-card')
+    )
+      target.open = true;
+  };
+  openLinkedGuide();
+  window.addEventListener('hashchange', openLinkedGuide);
+</script>

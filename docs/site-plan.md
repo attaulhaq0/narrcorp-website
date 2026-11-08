@@ -1,6 +1,6 @@
 # Narrcorp website plan
 
-Status: proposed site and content scope, 8 November 2026.
+Status: implemented static release, 9 November 2026. Business copy approval and live hosting checks remain part of launch.
 
 ## Purpose
 
@@ -10,18 +10,22 @@ Lead with business problems and useful next steps. Proposed services require bus
 
 ## Page structure
 
-| Section      | Content                                                                        | Visitor action                        |
-| ------------ | ------------------------------------------------------------------------------ | ------------------------------------- |
-| Header       | Narrcorp wordmark; About, Services and Why Narrcorp anchors; Let's talk button | Navigate or email                     |
-| Hero         | One clear business headline, supporting paragraph and original visual          | Start a conversation or view services |
-| About        | Business-first proposition and engagement approach                             | Understand the offering               |
-| Services     | Eight concise service groups describing useful work                            | Identify a relevant need              |
-| Why Narrcorp | Clear scope, usable solutions, operational planning and flexible expertise     | Assess the approach                   |
-| Testimonials | Real, permissioned customer quotations with accurate attribution               | Assess credible proof                 |
-| CTA          | Direct invitation and guidance on what to include in an email                  | Email hr@narrcorp.com                 |
-| Footer       | Narrcorp name, copyright and email as the only contact information             | Email                                 |
+| Section              | Content                                                                       | Visitor action                        |
+| -------------------- | ----------------------------------------------------------------------------- | ------------------------------------- |
+| Header               | Announcement; wordmark; centered section anchors; expertise and email buttons | Navigate or email                     |
+| Hero                 | One clear business headline, supporting paragraph and original visual         | Start a conversation or view services |
+| Technology examples  | Two moving rows of illustrative platform examples                             | Understand technical context          |
+| About                | Business-first proposition and engagement approach                            | Understand the offering               |
+| Services             | Eight concise service groups describing useful work                           | Identify a relevant need              |
+| Why Narrcorp         | Clear scope, usable solutions, operational planning and flexible expertise    | Assess the approach                   |
+| Technology ecosystem | Floating platform icons and evaluation guidance                               | Explore services                      |
+| Industry scenarios   | Healthcare, finance and retail planning tabs                                  | Consider a relevant starting point    |
+| Expertise            | Four technical disciplines with illustrative portraits                        | Explore the skills a project needs    |
+| Guidance             | Three expandable planning articles                                            | Prepare a useful brief                |
+| CTA                  | Direct invitation and guidance on what to include in an email                 | Email hr@narrcorp.com                 |
+| Footer               | Narrcorp name, copyright and email as the only contact information            | Email                                 |
 
-If testimonials are unavailable, omit the section. Do not publish placeholders, invented names, ratings, logos, metrics or reviews. The remaining seven sections still form the complete landing page.
+Testimonials remain omitted until genuine, approved quotations are supplied. Platform examples are explicitly labelled; they are not customer logos or evidence of partnerships. The overview counts describe the page's eight services, three staffing arrangements and four delivery principles, rather than historical performance.
 
 ## Proposed service groups
 
@@ -38,9 +42,9 @@ Confirm actual delivery coverage, engagement models and boundaries before public
 
 ## Content and visual principles
 
-Use plain English and concrete service descriptions. Avoid unsupported scale, rankings or results. Do not add an industry list, blog, careers portal or additional pages to this scope.
+Use plain English and concrete service descriptions. Avoid unsupported scale, rankings or results. Industry scenarios and guidance stay on this landing page; they are not customer case studies. No careers portal, forms or additional service routes are included.
 
-Visual direction: white backgrounds, forest-green accents and deep green ink, large serif headings, rounded media cards and generous spacing. The hero uses a responsive 60 fps sequence with illustrative portraits, moving callouts, learning progress and a workflow demonstration. Services have three visual highlights followed by an expandable directory covering all eight offerings. Cards share a sticky position on desktop and stack normally on phones and tablets. Reduced-motion mode pauses video and removes scroll animation and sticky layering.
+Visual direction: white and mint backgrounds, forest-green accents and deep ink, large serif headings, rounded media cards and generous spacing. The hero uses a responsive sequence with an illustrative portrait, moving callouts and a workflow demonstration. Services have three visual highlights followed by an expandable directory covering all eight offerings. Cards share a sticky position on desktop and stack normally on phones and tablets. Two skill ribbons cross the talent visual. Additional motion includes platform marquees, scroll highlights, ecosystem reveals and vertically moving engagement cards. The pause control and reduced-motion mode stop decorative motion and remove sticky layering.
 
 Use original or licensed media. Illustrative people must not be represented as actual employees, clients or reviewers. Keep meaningful text in HTML rather than embedding it in images.
 

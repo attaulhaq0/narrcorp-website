@@ -109,3 +109,110 @@ export const homepage = {
     action: 'Email Narrcorp',
   },
 } as const;
+
+export const platforms = [
+  { name: 'Google', asset: 'google.webp' },
+  { name: 'Microsoft', asset: 'microsoft.svg' },
+  { name: 'Databricks', asset: 'databricks.svg' },
+  { name: 'NVIDIA', asset: 'nvidia.webp' },
+  { name: 'Kubernetes', asset: 'kubernetes.webp' },
+  { name: 'AWS', asset: 'aws.webp' },
+  { name: 'Azure', asset: 'azure.webp' },
+  { name: 'GitHub', asset: 'github.svg' },
+] as const;
+export const scenarios = [
+  {
+    id: 'healthcare',
+    label: 'Healthcare',
+    title: 'Make operational information easier to use.',
+    description:
+      'Bring scheduling, administration and reporting into a clearer workflow. Start by mapping access needs, data flows and the handoffs that delay everyday work.',
+    focus: 'Workflow mapping · System integration · Access controls',
+    image: 'healthcare-context',
+  },
+  {
+    id: 'finance',
+    label: 'Finance',
+    title: 'Give an internal application a better foundation.',
+    description:
+      'Review an application that has become difficult to change. Plan improvements to its integrations, testing and deployment process around the controls your business requires.',
+    focus: 'Application modernization · Quality engineering · Cloud delivery',
+    image: 'finance-context',
+  },
+  {
+    id: 'retail',
+    label: 'Retail',
+    title: 'Connect order, stock and customer information.',
+    description:
+      'Consider how orders, stock and customer information move between systems. Define the integrations and reporting needed to reduce repeated entry and help teams handle exceptions.',
+    focus: 'Business integration · Automation · Reporting',
+    image: 'retail-context',
+  },
+] as const;
+export const expertise = [
+  {
+    title: 'Cloud & operations',
+    description:
+      'Infrastructure, deployment pipelines and the visibility needed to run them.',
+    image: 'expert-cloud',
+    tags: ['Cloud', 'Delivery operations'],
+  },
+  {
+    title: 'Software engineering',
+    description:
+      'Applications shaped around users, maintainable code and dependable releases.',
+    image: 'expert-engineering',
+    tags: ['Applications', 'Integration'],
+  },
+  {
+    title: 'Data & applied AI',
+    description:
+      'Reliable data foundations and AI evaluated against a specific business use.',
+    image: 'expert-data',
+    tags: ['Data platforms', 'Applied AI'],
+  },
+  {
+    title: 'Quality & resilience',
+    description:
+      'Testing, access reviews and recovery planning built into the delivery conversation.',
+    image: 'expert-quality',
+    tags: ['Quality', 'Resilience'],
+  },
+] as const;
+export const guidance = [
+  {
+    id: 'scope',
+    category: 'Technology planning',
+    title: 'Define the problem before choosing the platform.',
+    description: 'A clear brief makes technology decisions easier to evaluate.',
+    paragraphs: [
+      'Describe the task that needs to improve, who performs it and what gets in the way. Include the systems involved and any constraints on access, timing or budget.',
+      'Separate essential outcomes from useful additions. Agree how you will assess the change, then compare platforms against those needs, integration requirements and ongoing maintenance.',
+      'For an initial conversation, a short process outline and a list of existing tools are more useful than a predetermined solution.',
+    ],
+  },
+  {
+    id: 'teams',
+    category: 'Team planning',
+    title: 'Choose an engagement that fits the work.',
+    description:
+      'Match ownership and working arrangements to the support you need.',
+    paragraphs: [
+      'Staff augmentation adds specialist capacity to a team you manage. Permanent hiring fills an ongoing role within your organization. A dedicated team brings a defined group of skills to a longer delivery effort.',
+      'Before choosing, clarify who owns priorities, reviews work and supports onboarding. Consider the skills required, expected duration, communication schedule and access to your systems.',
+      'Share the role or project brief by email so the working arrangement can be discussed alongside the technical requirement.',
+    ],
+  },
+  {
+    id: 'systems',
+    category: 'Delivery planning',
+    title: 'Plan the handover while you plan the build.',
+    description:
+      'Keep the delivered system understandable for the people who will operate it.',
+    paragraphs: [
+      'Identify the team that will maintain the system and the knowledge they will need. Include deployment instructions, configuration guidance, dependencies and recovery steps in the scope.',
+      'Use review points during delivery to explain decisions and collect questions. Documentation is easier to maintain when it develops alongside the work.',
+      'At handover, check that the receiving team can access the relevant materials and understands the operating responsibilities.',
+    ],
+  },
+] as const;

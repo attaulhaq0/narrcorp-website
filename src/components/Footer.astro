@@ -4,6 +4,35 @@ import { contact } from '../data/homepage';
 ---
 
 <footer class="site-footer">
+  <div class="container footer-navigation">
+    <div>
+      <h2>Technology</h2>
+      <a href="#services">Engineering & automation</a>
+      <a href="#services">Cloud & data</a>
+      <a href="#services">Quality & resilience</a>
+    </div>
+    <div>
+      <h2>People</h2>
+      <a href="#expertise">Specialist expertise</a>
+      <a href="#services">Staffing & dedicated teams</a>
+      <a href="#guide-teams">Choosing an engagement</a>
+    </div>
+    <div>
+      <h2>Narrcorp</h2>
+      <a href="#about">About us</a>
+      <a href="#why-narrcorp">Our approach</a>
+      <a href="#guidance">Practical guidance</a>
+    </div>
+    <div>
+      <h2>Start a conversation</h2>
+      <a href={contact.href}>{contact.email}</a>
+      <p>
+        Technology projects
+        <br />
+        and hiring requirements.
+      </p>
+    </div>
+  </div>
   <div class="container footer-inner">
     <Brand />
     <a href={contact.href}>{contact.email}</a>
