@@ -2,13 +2,17 @@
 
 Technology consulting, digital engineering and specialist talent services.
 
-Narrcorp's website is being developed as a focused, responsive landing page that helps business teams understand the offering and start a conversation.
+A responsive, motion-led landing page that helps business teams understand Narrcorp's services and start a conversation. Built with Astro, TypeScript and CSS; deployed as static files on Hostinger.
+
+[Live website](https://narrcorp.com/) · [Visual case study](docs/showcase.md) · [Portfolio](https://attaulhaq-spatial-portfolio.vercel.app/#freelance-web-development)
+
+![Narrcorp headline and looping hero animation](docs/images/narrcorp-hero-motion.gif)
 
 **Website contact:** [hr@narrcorp.com](mailto:hr@narrcorp.com)
 
 ## Project status
 
-The responsive landing page is implemented with Astro, TypeScript and regular CSS using static output. It uses white, mint and forest-green surfaces, serif display typography, photography, a responsive animated hero and layered service cards. The static release includes production search metadata and Hostinger configuration for https://narrcorp.com/. Business approval, domain hosting and mailbox verification are launch responsibilities.
+The responsive landing page is implemented with Astro, TypeScript and regular CSS using static output. It uses white, mint and forest-green surfaces, serif display typography, photography, a responsive animated hero and layered service cards. The static release includes production search metadata and Hostinger configuration for https://narrcorp.com/. The website is live on Hostinger. Client service approval, search-console ownership and mailbox verification remain owner responsibilities.
 
 ## Website scope
 
