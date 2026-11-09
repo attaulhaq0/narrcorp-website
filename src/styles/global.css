@@ -1321,26 +1321,19 @@ p {
   right: 20%;
   bottom: 11%;
 }
-.ecosystem-square {
-  position: absolute;
-  width: 70px;
-  height: 70px;
-  background: #eef0ee;
-  opacity: 0.6;
-}
-.square-one {
+.ecosystem-icon-8 {
   left: 5%;
   top: 46%;
 }
-.square-two {
-  right: 17%;
+.ecosystem-icon-9 {
+  right: 5%;
   top: 47%;
 }
-.square-three {
+.ecosystem-icon-10 {
   left: 29%;
   bottom: 21%;
 }
-.square-four {
+.ecosystem-icon-11 {
   right: 36%;
   top: 17%;
 }
@@ -1903,10 +1896,10 @@ html[data-motion='off'] .expertise-card > img {
     align-self: center;
   }
   .ecosystem-stage {
-    height: 600px;
+    height: 700px;
   }
   .ecosystem-copy {
-    max-width: 240px;
+    max-width: min(240px, calc(100% - 132px));
   }
   .ecosystem-copy h2 {
     font-size: 24px;
@@ -1960,23 +1953,19 @@ html[data-motion='off'] .expertise-card > img {
     right: 26%;
     bottom: 8%;
   }
-  .ecosystem-square {
-    width: 40px;
-    height: 40px;
-  }
-  .square-one {
+  .ecosystem-icon-8 {
     left: 2%;
     top: 39%;
   }
-  .square-two {
+  .ecosystem-icon-9 {
     right: 4%;
     top: 49%;
   }
-  .square-three {
+  .ecosystem-icon-10 {
     left: 37%;
     bottom: 16%;
   }
-  .square-four {
+  .ecosystem-icon-11 {
     right: 34%;
     top: 16%;
   }

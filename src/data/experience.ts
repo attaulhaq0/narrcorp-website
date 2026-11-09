@@ -1,1 +1,7 @@
-export { platforms, scenarios, expertise, guidance } from './homepage';
+export {
+  platforms,
+  ecosystemPlatforms,
+  scenarios,
+  expertise,
+  guidance,
+} from './homepage';

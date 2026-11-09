@@ -1,5 +1,5 @@
 ---
-import { platforms } from '../data/experience';
+import { platforms, ecosystemPlatforms } from '../data/experience';
 interface Props {
   variant?: 'marquee' | 'ecosystem';
 }
@@ -48,7 +48,7 @@ const { variant = 'marquee' } = Astro.props;
           Explore services
         </a>
       </div>
-      {platforms.map((platform, index) => (
+      {ecosystemPlatforms.map((platform, index) => (
         <div class={`ecosystem-icon ecosystem-icon-${index}`}>
           <img
             src={`/media/platform-${platform.asset}`}
@@ -59,10 +59,6 @@ const { variant = 'marquee' } = Astro.props;
           />
         </div>
       ))}
-      <span class="ecosystem-square square-one" aria-hidden="true"></span>
-      <span class="ecosystem-square square-two" aria-hidden="true"></span>
-      <span class="ecosystem-square square-three" aria-hidden="true"></span>
-      <span class="ecosystem-square square-four" aria-hidden="true"></span>
     </div>
   </section>
 )}

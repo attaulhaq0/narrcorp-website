@@ -104,6 +104,8 @@ The platform marquee has no visible caption. Its accessible section label is Tec
 
 **Ecosystem headline:** The right tools. A connected approach.
 
+The ecosystem also includes Docker, Terraform, PostgreSQL and Snowflake.
+
 Evaluate platforms against your systems, your team and the work ahead.
 
 ## Industry planning scenarios

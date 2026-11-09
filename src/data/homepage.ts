@@ -120,6 +120,14 @@ export const platforms = [
   { name: 'Azure', asset: 'azure.webp' },
   { name: 'GitHub', asset: 'github.svg' },
 ] as const;
+
+export const ecosystemPlatforms = [
+  ...platforms,
+  { name: 'Docker', asset: 'docker.svg' },
+  { name: 'Terraform', asset: 'terraform.svg' },
+  { name: 'PostgreSQL', asset: 'postgresql.svg' },
+  { name: 'Snowflake', asset: 'snowflake.svg' },
+] as const;
 export const scenarios = [
   {
     id: 'healthcare',
