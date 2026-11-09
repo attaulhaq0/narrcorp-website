@@ -59,7 +59,7 @@ const images = [cloud, engineering, data, quality];
       <img src="/media/arrow-left.svg" alt="" width="20" height="20" />
     </button>
     <span class="carousel-status" aria-live="polite">
-      1 / 4
+      View 1 of 4
     </span>
     <button class="icon-button" type="button" aria-label="Next expertise">
       <img src="/media/arrow-right.svg" alt="" width="20" height="20" />
@@ -82,24 +82,18 @@ const images = [cloud, engineering, data, quality];
     )!;
     const status = controls.querySelector<HTMLElement>('.carousel-status')!;
     const update = () => {
-      const visible = cards
-        .map((card, index) => ({ card, index }))
-        .filter(({ card }) => {
-          const relativeLeft = card.offsetLeft - cards[0].offsetLeft;
-          return (
-            relativeLeft + card.offsetWidth > track.scrollLeft + 5 &&
-            relativeLeft < track.scrollLeft + track.clientWidth - 5
-          );
-        });
-      const first = visible[0]?.index ?? 0;
-      const last = visible.at(-1)?.index ?? first;
-      status.textContent =
-        first === last
-          ? `${first + 1} / ${cards.length}`
-          : `${first + 1}–${last + 1} / ${cards.length}`;
-      previous.disabled = track.scrollLeft < 5;
-      next.disabled =
-        track.scrollLeft >= track.scrollWidth - track.clientWidth - 5;
+      const maximum = track.scrollWidth - track.clientWidth;
+      const step = cards[1].offsetLeft - cards[0].offsetLeft;
+      const views = Math.ceil(Math.max(0, maximum - 5) / step) + 1;
+      const atStart = track.scrollLeft < 5;
+      const atEnd = track.scrollLeft >= maximum - 5;
+      const current = atEnd
+        ? views
+        : Math.min(views, Math.round(track.scrollLeft / step) + 1);
+      status.textContent = `View ${current} of ${views}`;
+      controls.hidden = maximum < 5;
+      previous.disabled = atStart;
+      next.disabled = atEnd;
     };
     const move = (direction: number) =>
       track.scrollBy({
