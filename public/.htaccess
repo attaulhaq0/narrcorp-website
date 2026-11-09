@@ -17,7 +17,7 @@ ErrorDocument 404 /404.html
   Header always set X-Frame-Options "SAMEORIGIN"
   Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
   <FilesMatch "\.(woff2|webp|jpg|svg|mp4|css|js)$">
-    Header set Cache-Control "public, max-age=604800"
+    Header set Cache-Control "public, max-age=3600, must-revalidate"
   </FilesMatch>
   <FilesMatch "^(index\.html|robots\.txt|sitemap\.xml)$">
     Header set Cache-Control "public, max-age=300"

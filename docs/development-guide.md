@@ -9,7 +9,7 @@ Astro is a web framework. TypeScript is the programming language used for typed 
 | Framework            | Astro, static output   | Reusable components and fast static pages         |
 | Content and behavior | TypeScript             | Clear content structure and checked code          |
 | Styling              | Regular CSS            | Direct control over layout and responsive design  |
-| Fonts                | Self-hosted Manrope    | No external font request from visitors            |
+| Fonts                | System Arial and serif | No external font request from visitors            |
 | Images               | Astro image processing | Responsive WebP sizes                             |
 | Contact              | Email links            | Opens an email application without a form/backend |
 | Hosting              | Hostinger, planned     | Serves the generated static files                 |

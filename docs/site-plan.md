@@ -50,7 +50,7 @@ Use original or licensed media. Illustrative people must not be represented as a
 
 ## Interaction and delivery
 
-Contact buttons use mailto:hr@narrcorp.com. This opens the visitor's configured email application; it does not submit a form or confirm delivery.
+The header and closing section's email buttons use mailto:hr@narrcorp.com. Discussion buttons lead to the closing contact section. Email links open the visitor's configured email application; they do not submit a form or confirm delivery.
 
 Build with Astro, TypeScript and regular CSS using static output. Astro produces HTML, CSS, responsive images and minimal JavaScript for hosting. Use progressive enhancement for mobile navigation, visible keyboard focus, readable contrast, semantic headings, reduced-motion support and responsive images. Optional video needs a still-image fallback and must not obscure the headline or CTA.
 

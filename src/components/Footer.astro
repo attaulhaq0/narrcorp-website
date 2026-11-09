@@ -35,7 +35,34 @@ import { contact } from '../data/homepage';
   </div>
   <div class="container footer-inner">
     <Brand />
-    <a href={contact.href}>{contact.email}</a>
     <p>© {new Date().getFullYear()} Narrcorp. All rights reserved.</p>
   </div>
+  <div class="container footer-preferences" hidden>
+    <label>
+      <input
+        type="checkbox"
+        id="reduce-motion"
+        aria-describedby="motion-help"
+      />
+      Reduce motion
+    </label>
+    <span class="sr-only" id="motion-help">
+      Stop continuous animation and use simpler transitions. Your device's
+      reduced-motion setting is also respected.
+    </span>
+  </div>
 </footer>
+<script>
+  import {
+    onMotionChange,
+    setReducedMotionPreference,
+  } from '../scripts/preferences';
+  const preference = document.querySelector<HTMLInputElement>('#reduce-motion');
+  if (preference) {
+    preference.closest<HTMLElement>('.footer-preferences')!.hidden = false;
+    onMotionChange((enabled) => (preference.checked = !enabled));
+    preference.addEventListener('change', () =>
+      setReducedMotionPreference(preference.checked),
+    );
+  }
+</script>

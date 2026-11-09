@@ -1,7 +1,7 @@
 :root {
   --ink: #132128;
   --body: #424d53;
-  --green: #328528;
+  --green: #2e7627;
   --mint: #ecf7ec;
   --line: #dfe5e1;
   --blue: #e8eff4;
@@ -1127,7 +1127,7 @@ p {
   align-items: center;
   justify-content: center;
   gap: 15px;
-  color: #707a7c;
+  color: #637073;
   font-size: 25px;
   font-weight: 600;
 }
@@ -1418,7 +1418,15 @@ p {
     translate: 0;
   }
 }
+.industry-content {
+  display: flex;
+  flex-direction: column;
+}
+.scenario-panels {
+  order: 1;
+}
 .scenario-tabs {
+  order: 2;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 36px 0 50px;
@@ -1428,7 +1436,7 @@ p {
   border-top: 1px solid #d9e5d7;
   background: transparent;
   padding: 24px 10px;
-  color: #7a8580;
+  color: #56675b;
   font-size: 14px;
   position: relative;
 }
@@ -1707,6 +1715,32 @@ p {
 }
 html[data-motion='off'] {
   scroll-behavior: auto;
+}
+html[data-motion='off'] .service-card {
+  position: relative;
+  top: auto;
+}
+.footer-preferences {
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: flex-end;
+}
+.footer-preferences label {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  min-height: 44px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.footer-preferences input {
+  width: 18px;
+  height: 18px;
+  accent-color: #86c97f;
+}
+.footer-preferences input:focus-visible {
+  outline: 2px solid #86c97f;
+  outline-offset: 4px;
 }
 html[data-motion='off'] .platform-row,
 html[data-motion='off'] .skill-ribbon {

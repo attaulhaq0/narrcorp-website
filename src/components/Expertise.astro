@@ -16,11 +16,14 @@ const images = [cloud, engineering, data, quality];
   <div class="container section-intro">
     <p class="section-label">Specialist expertise</p>
     <h2 id="expertise-heading">
-      Skills with a clear
+      Specialist skills
       <br />
-      place in your project.
+      for the work ahead.
     </h2>
-    <p>Technical disciplines to consider when shaping a team.</p>
+    <p>
+      Build a team around the applications, infrastructure and data your project
+      depends on.
+    </p>
   </div>
   <div
     class="expertise-track container"
@@ -79,8 +82,21 @@ const images = [cloud, engineering, data, quality];
     )!;
     const status = controls.querySelector<HTMLElement>('.carousel-status')!;
     const update = () => {
-      const at = Math.round(track.scrollLeft / (cards[0].offsetWidth + 24));
-      status.textContent = `${Math.min(at + 1, cards.length)} / ${cards.length}`;
+      const visible = cards
+        .map((card, index) => ({ card, index }))
+        .filter(({ card }) => {
+          const relativeLeft = card.offsetLeft - cards[0].offsetLeft;
+          return (
+            relativeLeft + card.offsetWidth > track.scrollLeft + 5 &&
+            relativeLeft < track.scrollLeft + track.clientWidth - 5
+          );
+        });
+      const first = visible[0]?.index ?? 0;
+      const last = visible.at(-1)?.index ?? first;
+      status.textContent =
+        first === last
+          ? `${first + 1} / ${cards.length}`
+          : `${first + 1}–${last + 1} / ${cards.length}`;
       previous.disabled = track.scrollLeft < 5;
       next.disabled =
         track.scrollLeft >= track.scrollWidth - track.clientWidth - 5;

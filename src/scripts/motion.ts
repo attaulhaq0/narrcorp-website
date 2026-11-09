@@ -1,10 +1,10 @@
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SplitType from 'split-type';
+import { onMotionChange } from './preferences';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 const revealed = new WeakSet<Element>();
 let context: gsap.Context | undefined;
 let observer: IntersectionObserver | undefined;
@@ -58,7 +58,7 @@ function setMotion(enabled: boolean) {
       split.chars?.forEach((character) =>
         character.setAttribute('aria-hidden', 'true'),
       );
-      gsap.set(split.chars, { color: '#A1A6A9' });
+      gsap.set(split.chars, { color: '#69766D' });
       gsap.to(split.chars, {
         color: '#10292C',
         ease: 'none',
@@ -166,9 +166,5 @@ function setMotion(enabled: boolean) {
   ScrollTrigger.refresh();
 }
 
-setMotion(!reducedMotion.matches);
-document.addEventListener('narrcorp:motion', (event) => {
-  setMotion((event as CustomEvent<{ enabled: boolean }>).detail.enabled);
-});
-reducedMotion.addEventListener('change', (event) => setMotion(!event.matches));
+onMotionChange(setMotion);
 window.addEventListener('load', () => ScrollTrigger.refresh(), { once: true });

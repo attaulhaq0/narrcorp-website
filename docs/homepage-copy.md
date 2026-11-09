@@ -6,7 +6,7 @@ Editorial proposal for business review. Confirm every service is offered and eve
 
 **Brand:** narrcorp
 
-**Navigation:** About / Services / Why Narrcorp / Industry scenarios / Guidance
+**Navigation:** About / Services / Why Narrcorp / Industries / Guidance
 
 **Announcement:** Technology services and specialist staffing, connected.
 
@@ -18,11 +18,11 @@ Editorial proposal for business review. Confirm every service is offered and eve
 
 ## 2. Hero
 
-**Headline:** Turn business complexity into practical progress.
+**Headline:** Connect your systems. Strengthen your delivery team.
 
-**Supporting copy:** Technology consulting, software engineering and specialist talent to improve how your business operates. Connect systems, modernize applications and simplify the workflows your teams rely on.
+**Supporting copy:** Narrcorp helps businesses plan technology changes, build and integrate applications, and add specialist capacity for delivery.
 
-**Primary button:** Email Narrcorp
+**Primary button:** Discuss your project
 
 **Secondary link:** Explore services
 
@@ -44,35 +44,35 @@ Whether the starting point is one process or a wider modernization effort, the s
 
 ### Technology strategy and roadmaps
 
-Decide what to change, in what order and why. Assess existing systems, compare options and build a roadmap with priorities, dependencies and budget considerations.
+We assess existing systems, compare options and build technology roadmaps with clear priorities, dependencies and budget considerations.
 
 ### Workflow automation
 
-Replace repeated data entry and manual handoffs with connected workflows. Automate approvals, document routing and notifications, with review steps for decisions that need human judgment.
+We connect approvals, document routing and notifications to reduce repeated data entry and manual handoffs, retaining human review where needed.
 
 ### Software engineering and digital products
 
-Build applications around the tasks people need to complete. We design and develop websites, customer portals, internal tools and digital products, including improvements to existing software.
+We design and develop websites, customer portals and internal tools around the tasks people need to complete, and improve existing applications.
 
 ### Business system integration
 
-Keep information consistent across the tools your teams use. Connect customer management, finance and other business applications through integrations and application programming interfaces (APIs).
+We connect customer management, finance and other business applications through integrations and application programming interfaces (APIs), helping teams keep information consistent across their tools.
 
 ### Data, analytics and applied AI
 
-Bring data sources together for reporting and analysis. Develop pipelines and dashboards, and evaluate AI for defined uses such as internal knowledge search and document processing.
+We connect data sources through pipelines and build dashboards for reporting and analysis. We evaluate AI for defined uses such as internal knowledge search and document processing.
 
 ### Cloud platforms and delivery operations
 
-Prepare cloud environments for deployment and ongoing operation. Plan migrations, automate infrastructure and releases, and establish monitoring to support maintenance and troubleshooting.
+We plan cloud migrations, automate infrastructure and releases, and establish monitoring to support deployment, maintenance and troubleshooting.
 
 ### Quality, security and resilience
 
-Assess how applications behave, who can access them and how they recover. Use testing, access reviews and recovery planning to address reliability and security risks.
+We assess application behavior, access controls and recovery readiness. Testing, access reviews and recovery planning help address reliability and security risks.
 
 ### Technology staffing and dedicated teams
 
-Add the skills your project or team needs through staff augmentation, permanent hiring or a dedicated engineering team. Agree on the role, working arrangement and onboarding needs before the engagement begins.
+We support staff augmentation, permanent hiring and dedicated engineering teams. Each engagement starts with an agreed role, working arrangement and onboarding plan.
 
 ## 5. Why Narrcorp
 
@@ -122,35 +122,29 @@ Bring scheduling, administration and reporting into a clearer workflow. Start by
 
 **Focus:** Workflow mapping · System integration · Access controls
 
-**Label:** Planning scenario
-
 ### Finance
 
-**Headline:** Give an internal application a better foundation.
+**Headline:** Make finance applications easier to maintain.
 
 Review an application that has become difficult to change. Plan improvements to its integrations, testing and deployment process around the controls your business requires.
 
 **Focus:** Application modernization · Quality engineering · Cloud delivery
 
-**Label:** Planning scenario
-
 ### Retail
 
-**Headline:** Connect order, stock and customer information.
+**Headline:** Connect orders, stock and customer information.
 
 Consider how orders, stock and customer information move between systems. Define the integrations and reporting needed to reduce repeated entry and help teams handle exceptions.
 
 **Focus:** Business integration · Automation · Reporting
 
-**Label:** Planning scenario
-
-**Actions:** Email your requirement / Explore expertise
+**Actions:** Discuss your project / Explore expertise
 
 ## Specialist expertise
 
-**Headline:** Skills with a clear place in your project.
+**Headline:** Specialist skills for the work ahead.
 
-Technical disciplines to consider when shaping a team.
+Build a team around the applications, infrastructure and data your project depends on.
 
 ### Cloud & operations
 
@@ -172,7 +166,7 @@ Reliable data foundations and AI evaluated against a specific business use.
 
 ### Quality & resilience
 
-Testing, access reviews and recovery planning built into the delivery conversation.
+Testing, access reviews and recovery planning for applications your team needs to operate.
 
 **Tags:** Quality / Resilience
 
@@ -238,13 +232,13 @@ No testimonial copy is drafted because genuine, approved reviews are unavailable
 
 **Headline:** Tell us where you need support.
 
-**Supporting copy:** Email a brief outline of your project or hiring need, the systems or skills involved and your preferred timing. We’ll use it to discuss the next step.
+**Supporting copy:** Email a brief outline of your project or hiring need, the systems or skills involved and your preferred timing. We’ll review your outline and discuss the next step.
 
 **Button:** Email Narrcorp
 
-**Email:** hr@narrcorp.com
+**Email destination:** hr@narrcorp.com
 
-All contact buttons open the visitor's email application. The website does not collect or submit enquiries.
+Project discussion buttons take visitors to the closing contact section. The header and closing contact section contain the two “Email Narrcorp” buttons, which open the visitor's email application. The footer lists hr@narrcorp.com once. The website does not collect or submit enquiries.
 
 ## 8. Footer
 

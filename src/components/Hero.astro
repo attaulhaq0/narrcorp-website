@@ -1,5 +1,5 @@
 ---
-import { contact, homepage } from '../data/homepage';
+import { homepage } from '../data/homepage';
 ---
 
 <section class="hero" aria-labelledby="hero-heading">
@@ -13,7 +13,7 @@ import { contact, homepage } from '../data/homepage';
       <li>Software engineering</li>
       <li>Specialist talent</li>
     </ul>
-    <a class="button hero-primary" href={contact.href}>
+    <a class="button hero-primary" href="#contact">
       {homepage.hero.primaryAction}
     </a>
   </div>
@@ -55,12 +55,11 @@ import { contact, homepage } from '../data/homepage';
   </div>
 </section>
 <script>
+  import { isMotionEnabled, onMotionChange } from '../scripts/preferences';
   const video = document.querySelector<HTMLVideoElement>('.hero-sequence');
-  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   if (video) {
-    let paused = reducedMotion.matches;
+    let paused = !isMotionEnabled();
     let activeFormat = '';
-    let broadcastState: boolean | undefined;
     video.closest('.hero-stage')?.classList.add('is-enhanced');
     const updateMotion = () => {
       if (paused) video.pause();
@@ -71,12 +70,6 @@ import { contact, homepage } from '../data/homepage';
           paused = true;
           updateMotion();
         });
-      if (broadcastState !== !paused) {
-        broadcastState = !paused;
-        document.dispatchEvent(
-          new CustomEvent('narrcorp:motion', { detail: { enabled: !paused } }),
-        );
-      }
     };
     const selectFormat = () => {
       const format =
@@ -93,11 +86,10 @@ import { contact, homepage } from '../data/homepage';
       video.load();
     };
     selectFormat();
-    updateMotion();
-    window.addEventListener('resize', selectFormat);
-    reducedMotion.addEventListener('change', (event) => {
-      paused = event.matches;
+    onMotionChange((enabled) => {
+      paused = !enabled;
       updateMotion();
     });
+    window.addEventListener('resize', selectFormat);
   }
 </script>

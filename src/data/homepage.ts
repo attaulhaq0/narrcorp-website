@@ -16,42 +16,42 @@ export const services: readonly Offering[] = [
   {
     title: 'Technology strategy and roadmaps',
     description:
-      'Decide what to change, in what order and why. Assess existing systems, compare options and build a roadmap with priorities, dependencies and budget considerations.',
+      'We assess existing systems, compare options and build technology roadmaps with clear priorities, dependencies and budget considerations.',
   },
   {
     title: 'Workflow automation',
     description:
-      'Replace repeated data entry and manual handoffs with connected workflows. Automate approvals, document routing and notifications, with review steps for decisions that need human judgment.',
+      'We connect approvals, document routing and notifications to reduce repeated data entry and manual handoffs, retaining human review where needed.',
   },
   {
     title: 'Software engineering and digital products',
     description:
-      'Build applications around the tasks people need to complete. We design and develop websites, customer portals, internal tools and digital products, including improvements to existing software.',
+      'We design and develop websites, customer portals and internal tools around the tasks people need to complete, and improve existing applications.',
   },
   {
     title: 'Business system integration',
     description:
-      'Keep information consistent across the tools your teams use. Connect customer management, finance and other business applications through integrations and application programming interfaces (APIs).',
+      'We connect customer management, finance and other business applications through integrations and application programming interfaces (APIs), helping teams keep information consistent across their tools.',
   },
   {
     title: 'Data, analytics and applied AI',
     description:
-      'Bring data sources together for reporting and analysis. Develop pipelines and dashboards, and evaluate AI for defined uses such as internal knowledge search and document processing.',
+      'We connect data sources through pipelines and build dashboards for reporting and analysis. We evaluate AI for defined uses such as internal knowledge search and document processing.',
   },
   {
     title: 'Cloud platforms and delivery operations',
     description:
-      'Prepare cloud environments for deployment and ongoing operation. Plan migrations, automate infrastructure and releases, and establish monitoring to support maintenance and troubleshooting.',
+      'We plan cloud migrations, automate infrastructure and releases, and establish monitoring to support deployment, maintenance and troubleshooting.',
   },
   {
     title: 'Quality, security and resilience',
     description:
-      'Assess how applications behave, who can access them and how they recover. Use testing, access reviews and recovery planning to address reliability and security risks.',
+      'We assess application behavior, access controls and recovery readiness. Testing, access reviews and recovery planning help address reliability and security risks.',
   },
   {
     title: 'Technology staffing and dedicated teams',
     description:
-      'Add the skills your project or team needs through staff augmentation, permanent hiring or a dedicated engineering team. Agree on the role, working arrangement and onboarding needs before the engagement begins.',
+      'We support staff augmentation, permanent hiring and dedicated engineering teams. Each engagement starts with an agreed role, working arrangement and onboarding plan.',
   },
 ];
 export const principles: readonly Offering[] = [
@@ -81,11 +81,11 @@ export const homepage = {
   description:
     'Technology consulting, software engineering and staffing from Narrcorp. Explore cloud, data, automation and system integration for your next project.',
   hero: {
-    headline: 'Turn business complexity into',
-    emphasis: 'practical progress.',
+    headline: 'Connect your systems.',
+    emphasis: 'Strengthen your delivery team.',
     description:
-      'Technology consulting, software engineering and specialist talent to improve how your business operates. Connect systems, modernize applications and simplify the workflows your teams rely on.',
-    primaryAction: 'Email Narrcorp',
+      'Narrcorp helps businesses plan technology changes, build and integrate applications, and add specialist capacity for delivery.',
+    primaryAction: 'Discuss your project',
     secondaryAction: 'Explore services',
   },
   about: {
@@ -105,7 +105,7 @@ export const homepage = {
   cta: {
     headline: 'Tell us where you need support.',
     description:
-      'Email a brief outline of your project or hiring need, the systems or skills involved and your preferred timing. We’ll use it to discuss the next step.',
+      'Email a brief outline of your project or hiring need, the systems or skills involved and your preferred timing. We’ll review your outline and discuss the next step.',
     action: 'Email Narrcorp',
   },
 } as const;
@@ -141,7 +141,7 @@ export const scenarios = [
   {
     id: 'finance',
     label: 'Finance',
-    title: 'Give an internal application a better foundation.',
+    title: 'Make finance applications easier to maintain.',
     description:
       'Review an application that has become difficult to change. Plan improvements to its integrations, testing and deployment process around the controls your business requires.',
     focus: 'Application modernization · Quality engineering · Cloud delivery',
@@ -150,7 +150,7 @@ export const scenarios = [
   {
     id: 'retail',
     label: 'Retail',
-    title: 'Connect order, stock and customer information.',
+    title: 'Connect orders, stock and customer information.',
     description:
       'Consider how orders, stock and customer information move between systems. Define the integrations and reporting needed to reduce repeated entry and help teams handle exceptions.',
     focus: 'Business integration · Automation · Reporting',
@@ -182,7 +182,7 @@ export const expertise = [
   {
     title: 'Quality & resilience',
     description:
-      'Testing, access reviews and recovery planning built into the delivery conversation.',
+      'Testing, access reviews and recovery planning for applications your team needs to operate.',
     image: 'expert-quality',
     tags: ['Quality', 'Resilience'],
   },

@@ -3,12 +3,7 @@ import { Image } from 'astro:assets';
 import portrait from '../assets/talent-professional.webp';
 import workflow from '../assets/workflow-illustration.webp';
 import engineering from '../assets/engineering-illustration.webp';
-import {
-  contact,
-  homepage,
-  services,
-  ecosystemPlatforms,
-} from '../data/homepage';
+import { homepage, services, ecosystemPlatforms } from '../data/homepage';
 const ribbonPlatforms = ecosystemPlatforms.filter(({ name }) =>
   ['Azure', 'GitHub', 'Databricks', 'Snowflake'].includes(name),
 );
@@ -19,6 +14,7 @@ const highlights = [
     image: engineering,
     alt: 'Application development workflow.',
     color: 'stone',
+    action: 'Discuss software delivery',
   },
   {
     eyebrow: 'Automation',
@@ -26,6 +22,7 @@ const highlights = [
     image: workflow,
     alt: 'Connected workflow for reviewing and routing tasks.',
     color: 'mint',
+    action: 'Discuss your workflows',
   },
   {
     eyebrow: 'Talent',
@@ -33,6 +30,7 @@ const highlights = [
     image: portrait,
     alt: 'Technology professional.',
     color: 'blue',
+    action: 'Discuss your talent needs',
   },
 ];
 ---
@@ -48,54 +46,56 @@ const highlights = [
     <p>{homepage.services.description}</p>
   </div>
   <div class="service-stack">
-    {highlights.map(({ eyebrow, service, image, alt, color }, index) => (
-      <article
-        class={`service-card service-card-${color}`}
-        style={`--card-index: ${index}`}
-      >
-        <div class="service-card-copy">
-          <span class="section-label">{eyebrow}</span>
-          <h3>{service.title}</h3>
-          <p>{service.description}</p>
-          <a class="button" href={contact.href}>
-            Email your requirement
-          </a>
-        </div>
-        <div class="service-card-art">
-          <Image
-            src={image}
-            alt={alt}
-            width={700}
-            height={650}
-            sizes="(max-width: 760px) 100vw, 48vw"
-            widths={[480, 800]}
-            loading="lazy"
-            quality={85}
-          />
-          {color === 'blue' && (
-            <div class="service-skill-ribbons" aria-hidden="true">
-              <div class="skill-ribbon">
-                {[0, 1].map(() => (
-                  <div>
-                    {ribbonPlatforms.map(({ name, asset }) => (
-                      <span>
-                        <img
-                          src={`/media/platform-${asset}`}
-                          alt=""
-                          width="24"
-                          height="24"
-                        />
-                        {name}
-                      </span>
-                    ))}
-                  </div>
-                ))}
+    {highlights.map(
+      ({ eyebrow, service, image, alt, color, action }, index) => (
+        <article
+          class={`service-card service-card-${color}`}
+          style={`--card-index: ${index}`}
+        >
+          <div class="service-card-copy">
+            <span class="section-label">{eyebrow}</span>
+            <h3>{service.title}</h3>
+            <p>{service.description}</p>
+            <a class="button" href="#contact">
+              {action}
+            </a>
+          </div>
+          <div class="service-card-art">
+            <Image
+              src={image}
+              alt={alt}
+              width={700}
+              height={650}
+              sizes="(max-width: 760px) 100vw, 48vw"
+              widths={[480, 800]}
+              loading="lazy"
+              quality={85}
+            />
+            {color === 'blue' && (
+              <div class="service-skill-ribbons" aria-hidden="true">
+                <div class="skill-ribbon">
+                  {[0, 1].map(() => (
+                    <div>
+                      {ribbonPlatforms.map(({ name, asset }) => (
+                        <span>
+                          <img
+                            src={`/media/platform-${asset}`}
+                            alt=""
+                            width="24"
+                            height="24"
+                          />
+                          {name}
+                        </span>
+                      ))}
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
-          )}
-        </div>
-      </article>
-    ))}
+            )}
+          </div>
+        </article>
+      ),
+    )}
   </div>
   <div class="service-directory">
     <div class="directory-heading">
@@ -114,9 +114,6 @@ const highlights = [
           </summary>
           <div class="service-detail-body">
             <p>{service.description}</p>
-            <a class="text-link" href={contact.href}>
-              Email us about this service
-            </a>
           </div>
         </details>
       ))}

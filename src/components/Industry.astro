@@ -4,7 +4,6 @@ import healthcare from '../assets/healthcare-context.webp';
 import finance from '../assets/finance-context.webp';
 import retail from '../assets/retail-context.webp';
 import { scenarios } from '../data/experience';
-import { contact } from '../data/homepage';
 const images = [healthcare, finance, retail];
 ---
 
@@ -26,55 +25,56 @@ const images = [healthcare, finance, retail];
         systems, workflows and operating needs.
       </p>
     </div>
-    <div class="scenario-panels">
-      {scenarios.map((scenario, index) => (
-        <article
-          id={`scenario-${scenario.id}`}
-          class="scenario-panel"
-          aria-labelledby={`scenario-title-${scenario.id}`}
-        >
-          <div class="scenario-copy">
-            <p class="section-label">{scenario.label}</p>
-            <h3 id={`scenario-title-${scenario.id}`}>{scenario.title}</h3>
-            <p>{scenario.description}</p>
-            <p class="scenario-focus">{scenario.focus}</p>
-            <span class="scenario-note">Planning scenario</span>
-          </div>
-          <Image
-            src={images[index]}
-            alt={
-              index === 0
-                ? 'Healthcare administration workspace.'
-                : index === 1
-                  ? 'Finance operations desk.'
-                  : 'Retail shop interior.'
-            }
-            widths={[480, 800, 1200]}
-            sizes="(max-width: 760px) 100vw, 50vw"
-            width={900}
-            height={600}
-            loading="lazy"
-            quality={85}
-          />
-        </article>
-      ))}
-    </div>
-    <div class="scenario-tabs" aria-label="Industry planning scenarios" hidden>
-      {scenarios.map((scenario, index) => (
-        <button
-          type="button"
-          id={`tab-${scenario.id}`}
-          aria-controls={`scenario-${scenario.id}`}
-          aria-selected={index === 0}
-          tabindex={index === 0 ? 0 : -1}
-        >
-          {scenario.label}
-        </button>
-      ))}
+    <div class="industry-content">
+      <div class="scenario-tabs" aria-label="Industries" hidden>
+        {scenarios.map((scenario, index) => (
+          <button
+            type="button"
+            id={`tab-${scenario.id}`}
+            aria-controls={`scenario-${scenario.id}`}
+            aria-selected={index === 0}
+            tabindex={index === 0 ? 0 : -1}
+          >
+            {scenario.label}
+          </button>
+        ))}
+      </div>
+      <div class="scenario-panels">
+        {scenarios.map((scenario, index) => (
+          <article
+            id={`scenario-${scenario.id}`}
+            class="scenario-panel"
+            aria-labelledby={`scenario-title-${scenario.id}`}
+          >
+            <div class="scenario-copy">
+              <p class="section-label">{scenario.label}</p>
+              <h3 id={`scenario-title-${scenario.id}`}>{scenario.title}</h3>
+              <p>{scenario.description}</p>
+              <p class="scenario-focus">{scenario.focus}</p>
+            </div>
+            <Image
+              src={images[index]}
+              alt={
+                index === 0
+                  ? 'Healthcare administration workspace.'
+                  : index === 1
+                    ? 'Finance operations desk.'
+                    : 'Retail shop interior.'
+              }
+              widths={[480, 800, 1200]}
+              sizes="(max-width: 760px) 100vw, 50vw"
+              width={900}
+              height={600}
+              loading="lazy"
+              quality={85}
+            />
+          </article>
+        ))}
+      </div>
     </div>
     <div class="section-actions">
-      <a class="button" href={contact.href}>
-        Email your requirement
+      <a class="button" href="#contact">
+        Discuss your project
       </a>
       <a class="button button-outline" href="#expertise">
         Explore expertise

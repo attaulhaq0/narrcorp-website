@@ -19,6 +19,7 @@ const schema = {
       url: canonical,
       email: contact.email,
       description: homepage.description,
+      hasOfferCatalog: { '@id': canonical + '#services-catalog' },
     },
     {
       '@type': 'WebSite',
@@ -40,6 +41,7 @@ const schema = {
     },
     {
       '@type': 'OfferCatalog',
+      '@id': canonical + '#services-catalog',
       name: 'Narrcorp technology and talent services',
       itemListElement: services.map((service) => ({
         '@type': 'Offer',
