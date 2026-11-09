@@ -1,5 +1,6 @@
 ---
-import '../styles/global.css';
+import globalStyles from '../styles/global.css?url';
+import globalStylesSource from '../styles/global.css?raw';
 import { homepage, contact, services } from '../data/homepage';
 interface Props {
   title?: string;
@@ -9,6 +10,14 @@ const { title = homepage.title, description = homepage.description } =
   Astro.props;
 const isError = Astro.url.pathname === '/404/' || Astro.url.pathname === '/404';
 const canonical = 'https://narrcorp.com/';
+const stylesheetDigest = await crypto.subtle.digest(
+  'SHA-256',
+  new TextEncoder().encode(globalStylesSource),
+);
+const stylesheetVersion = Array.from(new Uint8Array(stylesheetDigest))
+  .map((byte) => byte.toString(16).padStart(2, '0'))
+  .join('')
+  .slice(0, 12);
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -62,6 +71,7 @@ const schema = {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href={`${globalStyles}?v=${stylesheetVersion}`} />
     <meta name="description" content={description} />
     <meta
       name="robots"
