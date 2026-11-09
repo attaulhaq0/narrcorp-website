@@ -51,7 +51,7 @@ npm run preview
 
 Formatting keeps source readable. `check` validates Astro and TypeScript. `build` creates a fresh static release in `dist/`. `preview` serves that release locally; source edits require another build to change this preview. The development server updates directly from source.
 
-The mobile menu supports Escape, focus return and closing after section selection. Industry tabs support arrow keys, Home and End. Expertise cards support scrolling, arrow keys and previous/next buttons. Service and guidance disclosures use native HTML details. Without JavaScript, navigation and industry content stay available. Decorative motion has an icon control and respects reduced-motion settings.
+The mobile menu supports Escape, focus return and closing after section selection. Industry tabs support arrow keys, Home and End. Expertise cards support scrolling, arrow keys and previous/next buttons. Service and guidance disclosures use native HTML details. Without JavaScript, navigation and industry content stay available. Decorative motion respects reduced-motion settings.
 
 Before committing, run the tracked-file check and redacted secret scans described in the publishing guide. Stage only the intended files, inspect the diff and commit a clear description of the change. GitHub Actions repeats formatting, type, build and publication checks.
 

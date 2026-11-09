@@ -98,23 +98,19 @@ These are proposed operating commitments, not evidence of past performance. Conf
 
 ## Technology context
 
-**Marquee caption:** Technology examples for the work ahead.
+The platform marquee has no visible caption. Its accessible section label is Technology ecosystem.
 
 **Platforms:** Google, Microsoft, Databricks, NVIDIA, Kubernetes, AWS, Azure, GitHub.
-
-Platform names are illustrative. No customer or partnership relationship is implied.
 
 **Ecosystem headline:** The right tools. A connected approach.
 
 Evaluate platforms against your systems, your team and the work ahead.
 
-Illustrative platforms. No partnership relationship is implied.
-
 ## Industry planning scenarios
 
 **Headline:** Technology decisions need business context.
 
-Illustrative planning scenarios. The scope of any engagement is agreed separately.
+Explore a starting point for your industry. Shape the scope around your systems, workflows and operating needs.
 
 ### Healthcare
 
@@ -152,7 +148,7 @@ Consider how orders, stock and customer information move between systems. Define
 
 **Headline:** Skills with a clear place in your project.
 
-Technical disciplines to consider when shaping a team. Portraits are illustrative.
+Technical disciplines to consider when shaping a team.
 
 ### Cloud & operations
 
@@ -230,7 +226,7 @@ At handover, check that the receiving team can access the relevant materials and
 
 **Dedicated teams — Bring the right skills together.** Discuss the disciplines and ownership your delivery effort needs. Team planning / Technical expertise.
 
-The visible portrait is labelled illustrative. Cards describe engagement options, not named staff or confirmed vacancies.
+Cards describe engagement options, not named staff or confirmed vacancies.
 
 ## 6. Testimonials
 

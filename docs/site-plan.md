@@ -25,7 +25,7 @@ Lead with business problems and useful next steps. Proposed services require bus
 | CTA                  | Direct invitation and guidance on what to include in an email                 | Email hr@narrcorp.com                 |
 | Footer               | Narrcorp name, copyright and email as the only contact information            | Email                                 |
 
-Testimonials remain omitted until genuine, approved quotations are supplied. Platform examples are explicitly labelled; they are not customer logos or evidence of partnerships. The overview counts describe the page's eight services, three staffing arrangements and four delivery principles, rather than historical performance.
+Testimonials remain omitted until genuine, approved quotations are supplied. Platform icons provide technical context without claiming customer relationships or partnerships. The overview counts describe the page's eight services, three staffing arrangements and four delivery principles, rather than historical performance.
 
 ## Proposed service groups
 
@@ -44,7 +44,7 @@ Confirm actual delivery coverage, engagement models and boundaries before public
 
 Use plain English and concrete service descriptions. Avoid unsupported scale, rankings or results. Industry scenarios and guidance stay on this landing page; they are not customer case studies. No careers portal, forms or additional service routes are included.
 
-Visual direction: white and mint backgrounds, forest-green accents and deep ink, large serif headings, rounded media cards and generous spacing. The hero uses a responsive sequence with an illustrative portrait, moving callouts and a workflow demonstration. Services have three visual highlights followed by an expandable directory covering all eight offerings. Cards share a sticky position on desktop and stack normally on phones and tablets. Two skill ribbons cross the talent visual. Additional motion includes platform marquees, scroll highlights, ecosystem reveals and vertically moving engagement cards. The pause control and reduced-motion mode stop decorative motion and remove sticky layering.
+Visual direction: white and mint backgrounds, forest-green accents and deep ink, large serif headings, rounded media cards and generous spacing. The hero uses a responsive sequence with portrait photography, moving callouts and a workflow demonstration. Services have three visual highlights followed by an expandable directory covering all eight offerings. Cards share a sticky position on desktop and stack normally on phones and tablets. Two skill ribbons cross the talent visual. Additional motion includes platform marquees, scroll highlights, ecosystem reveals and vertically moving engagement cards. Reduced-motion preferences stop decorative motion and remove sticky layering.
 
 Use original or licensed media. Illustrative people must not be represented as actual employees, clients or reviewers. Keep meaningful text in HTML rather than embedding it in images.
 

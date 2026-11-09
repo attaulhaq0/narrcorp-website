@@ -54,7 +54,7 @@ The production build writes static files to `dist/`. Upload the contents of that
 - `src/pages/`: homepage and custom 404 page.
 - `public/`: files copied directly to the static output, including the favicon and robots policy.
 
-Typography combines self-hosted Manrope with a system serif. Contact links open the visitor’s email application. The site has no analytics, form service or runtime API credentials. Testimonials are omitted until genuine, approved quotations are available. Photography and industry scenarios are illustrative; platform examples do not represent customer or partnership relationships. An icon control pauses decorative motion, and reduced-motion preferences are respected.
+Typography combines self-hosted Manrope with a system serif. Contact links open the visitor’s email application. The site has no analytics, form service or runtime API credentials. Testimonials are omitted until genuine, approved quotations are available. Platform icons provide technical context, and industry content guides project planning. Decorative motion respects visitors' reduced-motion preferences.
 
 The production homepage is indexable and has a canonical URL, sitemap, Open Graph image and structured service data. The 404 page is excluded from indexing. Keep externally shared review deployments access-protected or add a hosting-level noindex header. See the development guide for deployment and verification.
 

@@ -9,21 +9,21 @@ const highlights = [
     eyebrow: 'Engineering',
     service: services[2],
     image: engineering,
-    alt: 'Illustrative application development workflow.',
+    alt: 'Application development workflow.',
     color: 'stone',
   },
   {
     eyebrow: 'Automation',
     service: services[1],
     image: workflow,
-    alt: 'Illustrative connected workflow for reviewing and routing tasks.',
+    alt: 'Connected workflow for reviewing and routing tasks.',
     color: 'mint',
   },
   {
     eyebrow: 'Talent',
     service: services[7],
     image: portrait,
-    alt: 'Illustrative portrait representing technology talent.',
+    alt: 'Technology professional.',
     color: 'blue',
   },
 ];
@@ -64,9 +64,6 @@ const highlights = [
             loading="lazy"
             quality={85}
           />
-          {color === 'blue' && (
-            <span class="portrait-caption">Illustrative portrait</span>
-          )}
           {color === 'blue' && (
             <div class="service-skill-ribbons" aria-hidden="true">
               {[0, 1].map((row) => (

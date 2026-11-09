@@ -52,23 +52,12 @@ import { contact, homepage } from '../data/homepage';
       {homepage.hero.secondaryAction}
       <img src="/media/arrow-right.svg" alt="" width="18" height="18" />
     </a>
-    <button
-      class="motion-toggle icon-button"
-      type="button"
-      aria-pressed="false"
-      aria-label="Pause animation"
-      hidden
-    >
-      <img src="/media/pause.svg" alt="" width="18" height="18" />
-    </button>
   </div>
 </section>
 <script>
   const video = document.querySelector<HTMLVideoElement>('.hero-sequence');
-  const motionToggle =
-    document.querySelector<HTMLButtonElement>('.motion-toggle');
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  if (video && motionToggle) {
+  if (video) {
     let paused = reducedMotion.matches;
     let activeFormat = '';
     let broadcastState: boolean | undefined;
@@ -82,14 +71,6 @@ import { contact, homepage } from '../data/homepage';
           paused = true;
           updateMotion();
         });
-      motionToggle.setAttribute('aria-pressed', String(paused));
-      motionToggle.setAttribute(
-        'aria-label',
-        paused ? 'Play animation' : 'Pause animation',
-      );
-      motionToggle.querySelector('img')!.src = paused
-        ? '/media/play.svg'
-        : '/media/pause.svg';
       if (broadcastState !== !paused) {
         broadcastState = !paused;
         document.dispatchEvent(
@@ -111,14 +92,9 @@ import { contact, homepage } from '../data/homepage';
       };
       video.load();
     };
-    motionToggle.hidden = false;
     selectFormat();
     updateMotion();
     window.addEventListener('resize', selectFormat);
-    motionToggle.addEventListener('click', () => {
-      paused = !paused;
-      updateMotion();
-    });
     reducedMotion.addEventListener('change', (event) => {
       paused = event.matches;
       updateMotion();

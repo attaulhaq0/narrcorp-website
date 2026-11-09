@@ -293,16 +293,6 @@ p {
   gap: 30px;
   padding: 7px 0 28px;
 }
-.motion-toggle {
-  background: transparent;
-  border: 0;
-  color: var(--body);
-  font-size: 12px;
-  padding: 7px;
-}
-.motion-toggle:hover {
-  text-decoration: underline;
-}
 
 .about-section {
   border-top: 1px solid #edf0ed;
@@ -764,9 +754,6 @@ p {
   .hero-bottom .text-link {
     font-size: 12px;
   }
-  .motion-toggle {
-    font-size: 10px;
-  }
   .about-section {
     margin-top: 25px;
   }
@@ -992,24 +979,6 @@ p {
 }
 
 /* Shared controls and responsive section details. */
-.platform-disclaimer {
-  font-size: 11px;
-  text-align: center;
-  color: #606c66;
-  margin-top: 25px;
-}
-.ecosystem-copy .ecosystem-disclaimer {
-  font-size: 11px !important;
-  line-height: 1.5 !important;
-  margin: 0 0 22px !important;
-  color: #647168;
-}
-.portrait-caption {
-  font-size: 9px;
-  color: #647168;
-  display: block;
-  margin-top: -7px;
-}
 .guidance-close-label {
   display: none;
 }
@@ -1117,12 +1086,6 @@ p {
 .platform-section {
   padding: 25px 0 85px;
   overflow: hidden;
-}
-.platform-caption {
-  text-align: center;
-  color: #727b7b;
-  font-size: 13px;
-  margin: 12px 0 34px;
 }
 .platform-rows {
   display: grid;
@@ -1236,18 +1199,6 @@ p {
   justify-content: space-between;
   padding: 48px 0;
   pointer-events: none;
-}
-.service-card-art > .portrait-caption {
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  z-index: 2;
-  padding: 6px 10px;
-  border-radius: 5px;
-  background: rgba(255, 255, 255, 0.95);
-  color: var(--ink);
-  font-size: 10px;
-  margin: 0;
 }
 .skill-ribbon,
 .skill-ribbon > div {
@@ -1888,10 +1839,6 @@ html[data-motion='off'] .expertise-card > img {
   }
   .platform-section {
     padding: 20px 0 45px;
-  }
-  .platform-caption {
-    font-size: 11px;
-    margin-bottom: 22px;
   }
   .platform-tile {
     height: 66px;

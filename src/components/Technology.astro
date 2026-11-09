@@ -7,12 +7,7 @@ const { variant = 'marquee' } = Astro.props;
 ---
 
 {variant === 'marquee' ? (
-  <section class="platform-section" aria-labelledby="platform-heading">
-    <div class="container">
-      <p id="platform-heading" class="platform-caption">
-        Technology examples for the work ahead.
-      </p>
-    </div>
+  <section class="platform-section" aria-label="Technology ecosystem">
     <div class="platform-rows" aria-hidden="true">
       {[platforms.slice(0, 4), platforms.slice(4)].map((row, index) => (
         <div class={`platform-row platform-row-${index}`}>
@@ -35,14 +30,7 @@ const { variant = 'marquee' } = Astro.props;
         </div>
       ))}
     </div>
-    <p class="sr-only">
-      {platforms.map((p) => p.name).join(', ')}. Technology examples; no
-      customer or partnership relationship is implied.
-    </p>
-    <p class="platform-disclaimer container">
-      Platform names are illustrative. No customer or partnership relationship
-      is implied.
-    </p>
+    <p class="sr-only">{platforms.map((p) => p.name).join(', ')}.</p>
   </section>
 ) : (
   <section class="ecosystem-section" aria-labelledby="ecosystem-heading">
@@ -55,9 +43,6 @@ const { variant = 'marquee' } = Astro.props;
         </h2>
         <p>
           Evaluate platforms against your systems, your team and the work ahead.
-        </p>
-        <p class="ecosystem-disclaimer">
-          Illustrative platforms. No partnership relationship is implied.
         </p>
         <a class="button" href="#services">
           Explore services
