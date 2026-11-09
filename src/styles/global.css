@@ -293,6 +293,9 @@ p {
   gap: 30px;
   padding: 7px 0 28px;
 }
+.hero-bottom .text-link {
+  border-bottom: 0;
+}
 
 .about-section {
   border-top: 1px solid #edf0ed;
@@ -925,12 +928,23 @@ p {
   max-width: none;
   aspect-ratio: 2758 / 932;
   margin: 48px auto 32px;
+  overflow: hidden;
+  isolation: isolate;
+  background: #fff;
 }
 .hero-sequence {
   display: none;
   width: 100%;
   height: auto;
   aspect-ratio: 2758 / 932;
+  clip-path: inset(1px 0);
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    #000 2px,
+    #000 calc(100% - 16px),
+    transparent
+  );
 }
 .hero-stage.is-enhanced .hero-sequence {
   display: block;
@@ -1193,11 +1207,11 @@ p {
 }
 .service-skill-ribbons {
   position: absolute;
-  inset: 0;
+  inset: auto 0 0;
+  height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 48px 0;
+  padding: 0 0 32px;
   pointer-events: none;
 }
 .skill-ribbon,
@@ -1208,9 +1222,6 @@ p {
 }
 .skill-ribbon {
   animation: skill-drift 24s linear infinite;
-}
-.skill-ribbon-1 {
-  animation-direction: reverse;
 }
 .skill-ribbon > div > span {
   display: flex;
@@ -1225,7 +1236,8 @@ p {
   color: var(--ink);
 }
 .skill-ribbon img {
-  color: var(--green);
+  object-fit: contain;
+  flex: 0 0 24px;
 }
 @keyframes skill-drift {
   to {

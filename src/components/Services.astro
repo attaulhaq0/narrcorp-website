@@ -3,7 +3,15 @@ import { Image } from 'astro:assets';
 import portrait from '../assets/talent-professional.webp';
 import workflow from '../assets/workflow-illustration.webp';
 import engineering from '../assets/engineering-illustration.webp';
-import { contact, homepage, services } from '../data/homepage';
+import {
+  contact,
+  homepage,
+  services,
+  ecosystemPlatforms,
+} from '../data/homepage';
+const ribbonPlatforms = ecosystemPlatforms.filter(({ name }) =>
+  ['Azure', 'GitHub', 'Databricks', 'Snowflake'].includes(name),
+);
 const highlights = [
   {
     eyebrow: 'Engineering',
@@ -66,30 +74,23 @@ const highlights = [
           />
           {color === 'blue' && (
             <div class="service-skill-ribbons" aria-hidden="true">
-              {[0, 1].map((row) => (
-                <div class={`skill-ribbon skill-ribbon-${row}`}>
-                  {[0, 1].map(() => (
-                    <div>
-                      {[
-                        'Application engineering',
-                        'Cloud delivery',
-                        'Data platforms',
-                        'Quality engineering',
-                      ].map((label, index) => (
-                        <span>
-                          <img
-                            src={`/media/${['code-xml', 'cloud', 'database', 'check-check'][index]}.svg`}
-                            alt=""
-                            width="18"
-                            height="18"
-                          />
-                          {label}
-                        </span>
-                      ))}
-                    </div>
-                  ))}
-                </div>
-              ))}
+              <div class="skill-ribbon">
+                {[0, 1].map(() => (
+                  <div>
+                    {ribbonPlatforms.map(({ name, asset }) => (
+                      <span>
+                        <img
+                          src={`/media/platform-${asset}`}
+                          alt=""
+                          width="24"
+                          height="24"
+                        />
+                        {name}
+                      </span>
+                    ))}
+                  </div>
+                ))}
+              </div>
             </div>
           )}
         </div>
