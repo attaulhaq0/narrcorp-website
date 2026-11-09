@@ -11,6 +11,7 @@ export const navigation = [
 interface Offering {
   title: string;
   description: string;
+  scope?: readonly string[];
 }
 export const services: readonly Offering[] = [
   {
@@ -32,6 +33,11 @@ export const services: readonly Offering[] = [
     title: 'Business system integration',
     description:
       'We connect customer management, finance and other business applications through integrations and application programming interfaces (APIs), helping teams keep information consistent across their tools.',
+    scope: [
+      'Map the information that moves between systems, its source of truth and the teams responsible for it.',
+      'Define API connections, field mappings and validation rules, including how failed transfers are detected and retried.',
+      'Test the integration with agreed business scenarios and document monitoring, access requirements and support responsibilities.',
+    ],
   },
   {
     title: 'Data, analytics and applied AI',
@@ -42,6 +48,11 @@ export const services: readonly Offering[] = [
     title: 'Cloud platforms and delivery operations',
     description:
       'We plan cloud migrations, automate infrastructure and releases, and establish monitoring to support deployment, maintenance and troubleshooting.',
+    scope: [
+      'Review workloads, dependencies, access requirements and operating costs before choosing a migration or infrastructure approach.',
+      'Define environments and deployment pipelines, with release checks and a rollback plan suited to the application.',
+      'Agree on alerts, backup and recovery checks, operating documentation and the team responsible after handover.',
+    ],
   },
   {
     title: 'Quality, security and resilience',
@@ -52,6 +63,11 @@ export const services: readonly Offering[] = [
     title: 'Technology staffing and dedicated teams',
     description:
       'We support staff augmentation, permanent hiring and dedicated engineering teams. Each engagement starts with an agreed role, working arrangement and onboarding plan.',
+    scope: [
+      'Define the responsibilities, required skills, seniority, working hours and expected duration of the role.',
+      'Choose between specialist support within your team, a dedicated delivery team or a permanent hiring requirement.',
+      'Agree on selection criteria, onboarding, access and reporting before the engagement begins.',
+    ],
   },
 ];
 export const principles: readonly Offering[] = [
@@ -109,6 +125,39 @@ export const homepage = {
     action: 'Email Narrcorp',
   },
 } as const;
+
+export const projectQuestions = [
+  {
+    question: 'Can Narrcorp improve our existing applications?',
+    answer:
+      'Yes. The starting point can be an application you already use. We review its behavior, integrations and maintenance needs, then agree on a focused improvement scope or a broader modernization plan.',
+  },
+  {
+    question: 'What should we prepare for a system integration discussion?',
+    answer:
+      'Share the applications involved, the information that needs to move between them and the manual steps causing delays. Existing API documentation, access restrictions and an owner for each system help define the work. Avoid sending passwords or sensitive business records in an initial email.',
+  },
+  {
+    question: 'How do you plan a cloud migration or release workflow?',
+    answer:
+      'We begin with the workloads, dependencies and business constraints. The plan then covers environments, access, deployment checks, rollback, monitoring and handover. The platform and rollout approach depend on your current systems and the agreed scope.',
+  },
+  {
+    question: 'How do we choose between a project and specialist staffing?',
+    answer:
+      'A defined project suits work with agreed deliverables and acceptance criteria. Specialist staffing adds capacity to a team you manage. A dedicated team can support a wider delivery scope. Discuss the work, ownership and duration first so the arrangement fits the requirement.',
+  },
+  {
+    question: 'Can we discuss work from the United States or India?',
+    answer:
+      'Narrcorp welcomes project and hiring enquiries from businesses in the United States, India and other markets. Working hours, delivery location and any jurisdiction-specific requirements are agreed for each engagement.',
+  },
+  {
+    question: 'What happens after we send a project enquiry?',
+    answer:
+      'We review your outline and discuss the objectives, systems or skills involved, timing and constraints. Before work begins, the engagement should define responsibilities, deliverables or role requirements, review points and commercial terms.',
+  },
+] as const;
 
 export const platforms = [
   { name: 'Google', asset: 'google.webp' },

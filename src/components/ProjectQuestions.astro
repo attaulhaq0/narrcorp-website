@@ -1,0 +1,30 @@
+---
+import { projectQuestions } from '../data/homepage';
+---
+
+<section
+  id="project-questions"
+  class="container section questions-section"
+  aria-labelledby="questions-heading"
+>
+  <div class="section-intro">
+    <p class="section-label">Project questions</p>
+    <h2 id="questions-heading">What to know before you begin.</h2>
+    <p>
+      Answers to help you prepare a technology project or hiring discussion.
+    </p>
+  </div>
+  <div class="service-list">
+    {projectQuestions.map(({ question, answer }) => (
+      <details class="service-detail question-detail">
+        <summary>
+          <span>{question}</span>
+          <img src="/media/arrow-right.svg" alt="" width="20" height="20" />
+        </summary>
+        <div class="service-detail-body">
+          <p>{answer}</p>
+        </div>
+      </details>
+    ))}
+  </div>
+</section>

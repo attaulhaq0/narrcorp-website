@@ -452,8 +452,69 @@ p {
   font-size: 16px;
   margin-bottom: 18px;
 }
+.service-detail-body h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 24px 0 12px;
+}
+.service-detail-body ul {
+  padding-left: 20px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.65;
+}
+.service-detail-body li + li {
+  margin-top: 12px;
+}
 .service-detail summary:hover {
   color: var(--green);
+}
+.footer-privacy {
+  flex-basis: 100%;
+  font-size: 14px;
+}
+
+.footer-privacy summary {
+  width: fit-content;
+  cursor: pointer;
+  padding: 12px 0;
+}
+
+.footer-privacy summary:focus-visible {
+  outline: 2px solid #a3d993;
+  outline-offset: 5px;
+}
+
+.footer-privacy-body {
+  max-width: 760px;
+  padding: 16px 0 8px;
+  line-height: 1.7;
+}
+
+.footer-privacy-body h2 {
+  margin: 0 0 16px;
+  font: inherit;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.footer-privacy-body p {
+  margin: 0 0 16px;
+}
+
+.footer-privacy-body code {
+  font-size: inherit;
+}
+
+.questions-section {
+  max-width: 1000px;
+}
+.service-detail.question-detail summary {
+  grid-template-columns: minmax(0, 1fr) 20px;
+  line-height: 1.45;
+}
+.question-detail .service-detail-body {
+  padding-left: 6px;
 }
 .why-section {
   background: #f8faf7;
@@ -573,6 +634,7 @@ p {
   padding: 36px 0 45px;
   border-top: 1px solid #39464b;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 30px;
@@ -587,6 +649,9 @@ p {
 .site-footer p {
   font-size: 12px;
   color: #acbcb5;
+}
+.site-footer .footer-privacy-body p {
+  font-size: 14px;
 }
 .error-page {
   min-height: 100vh;
@@ -848,11 +913,18 @@ p {
   .service-detail-body {
     padding: 0 0 23px 37px;
   }
-  .service-detail-body p {
+  .service-detail-body p,
+  .service-detail-body ul {
     font-size: 15px;
   }
   .service-detail-body .text-link {
     font-size: 12px;
+  }
+  .service-detail.question-detail summary {
+    grid-template-columns: minmax(0, 1fr) 17px;
+  }
+  .question-detail .service-detail-body {
+    padding-left: 0;
   }
   .why-inner {
     grid-template-columns: 1fr;

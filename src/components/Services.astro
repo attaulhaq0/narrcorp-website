@@ -114,6 +114,16 @@ const highlights = [
           </summary>
           <div class="service-detail-body">
             <p>{service.description}</p>
+            {service.scope && (
+              <>
+                <h4>What we agree with you</h4>
+                <ul>
+                  {service.scope.map((item) => (
+                    <li>{item}</li>
+                  ))}
+                </ul>
+              </>
+            )}
           </div>
         </details>
       ))}
