@@ -42,7 +42,7 @@ Verify ownership in Google Search Console and Bing Webmaster Tools and submit ht
 
 The page exposes clear services, business context, contact details and linked Organization, WebSite, WebPage and OfferCatalog schema. This supports machine-readable discovery. llms.txt is an optional summary, not a guarantee of inclusion in AI answers. Add genuine case studies, approved testimonials and useful service pages as the business supplies them. Do not invent ratings, offices, partnerships or results to strengthen SEO.
 
-No analytics or advertising script is required for the current landing page. If tracking or data collection is added, review privacy disclosures, consent requirements and the new security surface before release.
+Google Analytics 4 is optional and stays blocked until a visitor accepts analytics. Before release, verify first-visit blocking, persistent choices, withdrawal and cookie removal, browser privacy signals, keyboard access and mobile layouts. Confirm the production stream receives a page view and the fixed contact_click event. Keep advertising tracking disabled. Review privacy disclosures and consent requirements whenever data collection changes.
 
 ## Handover and maintenance
 

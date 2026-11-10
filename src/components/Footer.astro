@@ -1,5 +1,6 @@
 ---
 import Brand from './Brand.astro';
+import Privacy from './Privacy.astro';
 import { contact } from '../data/homepage';
 ---
 
@@ -37,27 +38,6 @@ import { contact } from '../data/homepage';
   <div class="container footer-inner">
     <Brand />
     <p>© {new Date().getFullYear()} Narrcorp. All rights reserved.</p>
-    <details class="footer-privacy" id="privacy">
-      <summary>Privacy</summary>
-      <div class="footer-privacy-body">
-        <h2>Website privacy</h2>
-        <p>
-          When you email Narrcorp, your message and contact details are used to
-          respond to your enquiry and discuss the work you need. Please avoid
-          sending passwords or sensitive records in an initial enquiry.
-        </p>
-        <p>
-          Email and hosting providers process data to deliver messages and
-          operate this website. Hosting data may include an IP address, browser
-          information, pages requested and access times. Hostinger may also set
-          a session cookie named <code>hcdn</code> when you visit.
-        </p>
-        <p>
-          This website currently has no installed analytics or advertising
-          trackers. For a question about your enquiry or website privacy, use
-          the contact details in this footer.
-        </p>
-      </div>
-    </details>
+    <Privacy />
   </div>
 </footer>

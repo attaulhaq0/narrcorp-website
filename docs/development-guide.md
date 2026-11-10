@@ -70,4 +70,4 @@ Before committing, run the tracked-file check and redacted secret scans describe
 
 Node is used on the developer's machine and in CI to build. Hostinger only serves the static output. Automatic uploads can be considered later; hosting credentials belong in a secret store, never in source or browser code.
 
-Privacy notices and consent requirements should be reviewed if forms, analytics or other data collection are added in the future.
+Analytics configuration is in src/data/analytics.ts. Its GA4 measurement ID is public configuration; credentials do not belong in the source. src/scripts/privacy.ts loads the tag only after consent on narrcorp.com or www.narrcorp.com. Development and preview hosts do not record visits. The footer provides privacy and cookie settings dialogs, with a native disclosure fallback when JavaScript is disabled. Review the privacy notice and consent requirements whenever forms, analytics or other data collection change.

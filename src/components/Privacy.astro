@@ -1,0 +1,153 @@
+---
+import { analytics } from '../data/analytics';
+---
+
+<details class="footer-privacy" id="privacy">
+  <summary>Privacy policy</summary>
+  <div class="footer-privacy-body privacy-copy">
+    <h2 id="privacy-heading">Website privacy</h2>
+    <p class="privacy-date">Updated 10 November 2026</p>
+    <h3>Enquiries</h3>
+    <p>
+      When you email Narrcorp, your message and contact details are used to
+      respond to your enquiry and discuss the work you need. Please avoid
+      sending passwords or sensitive records in an initial enquiry.
+    </p>
+    <h3>Website operation</h3>
+    <p>
+      Email and hosting providers process data to deliver messages and operate
+      this website. Hosting data may include an IP address, browser information,
+      pages requested and access times. Hostinger may also set a session cookie
+      named <code>hcdn</code> when you visit.
+    </p>
+    <h3>Optional analytics</h3>
+    <p>
+      With your permission, Narrcorp uses Google Analytics 4 to understand
+      website visits, traffic sources and contact-button clicks. Google
+      processes information about your browser, device and website activity, and
+      may process it in other countries. We do not send enquiry messages or
+      email addresses to Analytics. No advertising trackers are installed.
+    </p>
+    <p>
+      Analytics stays off until you accept it. When enabled, Google’s
+      <code>_ga</code> and <code>_ga_*</code> cookies may remain for up to six
+      months. Read
+      <a href="https://policies.google.com/technologies/partner-sites">
+        how Google uses data from sites that use its services
+      </a>{' '}
+      and{' '}
+      <a href="https://policies.google.com/privacy">Google’s privacy policy</a>.
+    </p>
+    <h3>Your choices</h3>
+    <p>
+      Use Cookie settings in the footer to accept or decline analytics at any
+      time. Your choice is stored in your browser for six months. Declining
+      stops analytics and clears its cookies on this website. It does not remove
+      data already received by Google.
+    </p>
+    <p>
+      For a question about your enquiry or website privacy, use the contact
+      details in this footer.
+    </p>
+  </div>
+</details>
+<button class="footer-link" type="button" data-open-cookies hidden>
+  Cookie settings
+</button>
+
+<dialog
+  class="privacy-dialog"
+  id="privacy-dialog"
+  aria-labelledby="privacy-heading"
+>
+  <button
+    class="dialog-close"
+    type="button"
+    data-close-privacy
+    aria-label="Close privacy policy"
+  >
+    Close <span aria-hidden="true">×</span>
+  </button>
+  <div data-privacy-content></div>
+</dialog>
+
+<div
+  class="cookie-banner"
+  role="region"
+  aria-labelledby="cookie-heading"
+  data-cookie-banner
+  data-measurement-id={analytics.measurementId}
+  data-consent-days={analytics.consentDays}
+  hidden
+>
+  <div class="cookie-message">
+    <h2 id="cookie-heading">Cookie choices</h2>
+    <p>
+      Optional analytics helps us understand visits and improve this website. It
+      stays off unless you accept. You can change your choice in the footer.{' '}
+      <button class="privacy-inline-link" type="button" data-open-privacy>
+        Privacy policy
+      </button>
+    </p>
+    <p class="cookie-browser-choice" data-browser-choice hidden>
+      Your browser’s privacy signal keeps analytics off.
+    </p>
+  </div>
+  <div class="cookie-actions">
+    <button class="cookie-choice" type="button" data-consent="denied">
+      Decline analytics
+    </button>
+    <button class="cookie-choice" type="button" data-consent="granted">
+      Accept analytics
+    </button>
+  </div>
+</div>
+
+<dialog
+  class="privacy-dialog cookie-dialog"
+  id="cookie-dialog"
+  aria-labelledby="cookie-settings-heading"
+>
+  <button
+    class="dialog-close"
+    type="button"
+    data-close-cookies
+    aria-label="Close cookie settings"
+  >
+    Close <span aria-hidden="true">×</span>
+  </button>
+  <h2 id="cookie-settings-heading">Cookie settings</h2>
+  <p>
+    Choose whether this website can use Google Analytics. Declining does not
+    affect browsing or contacting Narrcorp.
+  </p>
+  <div class="cookie-category">
+    <div>
+      <h3>Website operation</h3>
+      <p>Hosting and remembering your cookie choice.</p>
+    </div>
+    <span>Always available</span>
+  </div>
+  <div class="cookie-category">
+    <div>
+      <h3>Analytics</h3>
+      <p>Visits, traffic sources and contact-button clicks.</p>
+    </div>
+    <span data-consent-status>Off</span>
+  </div>
+  <p class="cookie-browser-choice" data-browser-choice hidden>
+    Your browser’s privacy signal keeps analytics off.
+  </p>
+  <div class="cookie-actions">
+    <button class="cookie-choice" type="button" data-consent="denied">
+      Decline analytics
+    </button>
+    <button class="cookie-choice" type="button" data-consent="granted">
+      Accept analytics
+    </button>
+  </div>
+</dialog>
+
+<script>
+  import '../scripts/privacy';
+</script>

@@ -58,7 +58,7 @@ The production build writes static files to `dist/`. Upload the contents of that
 - `src/pages/`: homepage and custom 404 page.
 - `public/`: files copied directly to the static output, including the favicon and robots policy.
 
-Typography combines system Arial with a system serif. Email links open the visitor’s email application. The site has no analytics, form service or runtime API credentials. Testimonials are omitted until genuine, approved quotations are available. Platform icons provide technical context, and industry content guides project planning. Decorative motion respects visitors' reduced-motion preferences.
+Email links open the visitor’s email application. Optional Google Analytics 4 loads on the production domain after a visitor accepts analytics. The footer provides Privacy policy and Cookie settings controls. Analytics measures page views and contact clicks without sending email addresses or enquiry content. The site has no form service or runtime API credentials. Testimonials are omitted until genuine, approved quotations are available. Platform icons provide technical context, and industry content guides project planning. Decorative motion respects visitors' reduced-motion preferences.
 
 The production homepage is indexable and has a canonical URL, sitemap, Open Graph image and structured service data. The 404 page is excluded from indexing. Keep externally shared review deployments access-protected or add a hosting-level noindex header. See the development guide for deployment and verification.
 

@@ -470,7 +470,6 @@ p {
   color: var(--green);
 }
 .footer-privacy {
-  flex-basis: 100%;
   font-size: 14px;
 }
 
@@ -478,6 +477,10 @@ p {
   width: fit-content;
   cursor: pointer;
   padding: 12px 0;
+  list-style: none;
+}
+.footer-privacy summary::-webkit-details-marker {
+  display: none;
 }
 
 .footer-privacy summary:focus-visible {
@@ -2179,5 +2182,227 @@ html[data-motion='off'] .expertise-card > img {
   }
   .overview-metrics span {
     font-size: 9px;
+  }
+}
+.footer-link {
+  padding: 12px 0;
+  border: 0;
+  background: transparent;
+  color: #d9e3de;
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.footer-link:hover,
+.footer-privacy summary:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.privacy-dialog {
+  width: min(660px, calc(100% - 32px));
+  max-height: min(82dvh, 760px);
+  margin: auto;
+  padding: 24px 32px 32px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #fff;
+  color: var(--ink);
+  overflow: auto;
+}
+
+.privacy-dialog::backdrop {
+  background: rgb(19 33 40 / 45%);
+}
+
+.dialog-close {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  margin: 0 0 12px auto;
+  padding: 8px 16px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.dialog-close span {
+  font-size: 22px;
+}
+
+.privacy-dialog h2,
+.privacy-dialog .privacy-copy h2 {
+  margin: 0 0 16px;
+  font: 32px / 1.2 var(--serif);
+  letter-spacing: -0.03em;
+}
+
+.privacy-dialog h3 {
+  margin: 24px 0 8px;
+  font-size: 16px;
+}
+
+.privacy-dialog p,
+.privacy-dialog .privacy-copy p {
+  margin: 0 0 16px;
+  color: var(--body);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.privacy-dialog .privacy-copy .privacy-date {
+  font-size: 12px;
+}
+
+.privacy-dialog .privacy-copy a {
+  color: var(--green);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.privacy-copy code {
+  padding-inline: 0.15em;
+}
+
+.privacy-dialog .footer-privacy-body {
+  padding: 0;
+}
+
+.cookie-banner {
+  position: fixed;
+  inset: auto 16px 16px;
+  z-index: 90;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  width: auto;
+  max-width: 1040px;
+  margin-inline: auto;
+  padding: 20px 24px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #fff;
+  color: var(--ink);
+  box-shadow: 0 8px 40px rgb(19 33 40 / 15%);
+}
+
+.cookie-message h2 {
+  margin: 0 0 6px;
+  font: 600 16px / 1.4 var(--sans);
+  letter-spacing: 0;
+}
+
+.cookie-banner .cookie-message p {
+  margin: 0;
+  color: var(--body);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.privacy-inline-link {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--green);
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.cookie-actions {
+  display: flex;
+  flex-shrink: 0;
+  gap: 8px;
+}
+
+.cookie-choice {
+  min-height: 44px;
+  padding: 12px 18px;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  background: var(--ink);
+  color: #fff;
+  font: 600 13px / 1.4 var(--sans);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.cookie-choice:hover {
+  border-color: var(--green);
+  background: var(--green);
+}
+
+.cookie-choice:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.cookie-category {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+}
+
+.cookie-category h3,
+.cookie-category p {
+  margin: 0;
+}
+
+.cookie-category span {
+  flex-shrink: 0;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: var(--mint);
+  font-size: 12px;
+}
+
+.cookie-dialog .cookie-actions {
+  margin-top: 20px;
+}
+
+.cookie-banner .cookie-message .cookie-browser-choice,
+.privacy-dialog .cookie-browser-choice {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+@media (max-width: 700px) {
+  .cookie-banner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    inset: auto 12px 12px;
+    padding: 16px;
+  }
+
+  .cookie-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cookie-choice {
+    padding: 10px 8px;
+    white-space: normal;
+  }
+
+  .privacy-dialog {
+    padding: 18px 20px 24px;
+  }
+
+  .cookie-category {
+    align-items: flex-start;
   }
 }
